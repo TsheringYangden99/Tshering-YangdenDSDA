@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherubtse College - About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-card {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            z-index: 2;
+        }
+
+        .contact-card h2 {
+            color: #007bb5;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .contact-card p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        a {
+            color: #007bb5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .sidebar ul li a:hover {
+            color: #b3e0ff;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                padding: 15px;
+                max-width: 100%;
+            }
+
+            .contact-card {
+                margin: 15px 0;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+        /* Team Section Title */
+#well-being-center-team h1 {
+    font-size: 2.5rem;
+    color: #003366;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #005b99;
+    padding-bottom: 10px;
+}
+
+/* Team Card Styling */
+.team-card {
+    background-color: #f3f4f6;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border-left: 4px solid #005b99;
+}
+
+/* Team Member Names */
+.team-card h2 {
+    font-size: 1.8rem;
+    color: #005b99;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Text Styling */
+.team-card p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Link Styling */
+.team-card a {
+    color: #005b99;
+    text-decoration: underline;
+}
+
+.team-card a:hover {
+    color: #003366;
+}
+/* Sidebar styles */
+.sidebar {
+    position: fixed; /* Fixes the sidebar in place */
+    top: 50px; /* Align it below the header or at a custom distance */
+    left: 20px; /* Adds space from the left edge */
+    width: 220px; /* Fixed width for the sidebar */
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for distinction */
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border around the sidebar */
+    z-index: 10; /* Ensures sidebar stays on top of content */
+}
+
+/* Sidebar headings */
+.sidebar h2 {
+    font-size: 20px;
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Sidebar links */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #005fa6;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    background-color: #e6f3ff; /* Light blue background for links */
+    border-radius: 5px; /* Rounded links */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #005fa6; /* Darker blue on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Main content adjustments */
+main {
+    margin-left: 260px; /* Pushes the main content to the right of the sidebar */
+    padding: 20px;
+    background-color: #fff; /* White background for content */
+}
+
+/* Ensure the sidebar is fixed for smaller screens too */
+@media (max-width: 768px) {
+    .sidebar {
+        top: 100px; /* Adjust the sidebar to be below the header */
+        width: 200px; /* Adjust width for smaller screens */
+    }
+
+    main {
+        margin-left: 240px; /* Adjust content to fit the sidebar */
+    }
+}
+/* Sidebar styles */
+.sidebar {
+    position: fixed; /* Fixes the sidebar in place */
+    top: 100px; /* Moves the sidebar down below the header */
+    left: 20px; /* Adds space from the left edge */
+    width: 220px; /* Fixed width for the sidebar */
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 20px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for distinction */
+    border-radius: 8px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border around the sidebar */
+    z-index: 10; /* Ensures sidebar stays on top of content */
+}
+
+/* Adjust main content to push it down */
+main {
+    margin-left: 260px; /* Pushes the main content to the right of the sidebar */
+    margin-top: 100px; /* Ensures the content starts below the header */
+    padding: 20px;
+    background-color: #fff; /* White background for content */
+}
+/* Ensure footer doesn't get overlapped by content */
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+footer .footer-logo-contact, footer .footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Sherubtse College Logo" class="logo-image">
+            <h1>Sherubtse College</h1>
+          </div>
+          <nav aria-label="Main Navigation">
+            <ul class="menu">
+              <li><a href="index.html" aria-label="Learn more about Sherubtse College">Home</a></li>
+              <li><a href="admission.html" aria-label="Find out about admissions">Academic</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" aria-label="Explore student services">Student services</a>
+                <div class="dropdown-content">
+                      <a href="https://sites.google.com/view/sherubtselibrary" class="unique-link blob1">Elibary</a>
+                      <a href="Ebook.html" class="unique-link blob2">Ebook and journal</a>
+                      <a href="Accomodation.html" class="unique-link blob3">Accomodation</a>
+                      <a href="Happinese and well being center.html" class="unique-link blob4">Happiness and wellbeing</a>
+                      <a href="club.html" class="unique-link blob5">club</a>
+                      <a href="events.html" class="unique-link blob6">Events</a>
+                      <a href="studentassocation.html" class="unique-link blob7">Student Association</a>
+                      <a href="games and sports.html" class="unique-link blob7">Games and Sports</a>
+                      <a href="Examrecords.html" class="unique-link blob7">Examination Records</a>
+                </div>
+              </li>
+              <li><a href="contact.html" aria-label="Contact Sherubtse College">Contact</a></li>
+            </ul>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+        <script>
+            // JavaScript for dropdown and responsive menu
+            document.querySelector('.dropbtn').addEventListener('click', function () {
+              const dropdownContent = this.nextElementSibling;
+              dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+              this.setAttribute('aria-expanded', dropdownContent.style.display === 'block');
+            });
+          
+            document.getElementById('hamburger-menu').addEventListener('click', function () {
+              const menu = document.querySelector('.menu');
+              menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+          </script>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Sidebar inside the main content -->
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#About">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#Upcoming Events">Upcoming Events</a></li>
+                <li><a href="#Center Contact">Center Contact</a></li>
+                <li><a href="#announcements">Announcements</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main section for the content -->
+        <div class="contact-container">
+            <h1>About Us</h1>
+            <p>Welcome to Sherubtse College's Happiness and Well-Being Center. Our goal is to create a nurturing environment for personal growth, development, and psychological well-being.</p>
+
+            <div id="president" class="contact-card">
+                <section id="about">
+                    <div id="vision" class="info-card">
+                        <h2>Vision</h2>
+                        <p>To promote an on-campus culture of wellness that ensures happiness, psychological well-being, and lifelong success.</p>
+                    </div>
+                
+                    <div id="mission" class="info-card">
+                        <h2>Mission</h2>
+                        <p>To create and provide an environment that fosters students’ growth, development, and psychological well-being through counseling services and awareness programs.</p>
+                    </div>
+                
+                    <div id="background" class="info-card">
+                        <h2>Background Information</h2>
+                        <p>
+                            The Happiness and Well-Being Center at Sherubtse College is dedicated to supporting students and staff through professional counseling services and awareness initiatives. Established in February 2016, the center is located within the Student Service Village and is run by a team of well-trained co-counselors. 
+                        </p>
+                        <p>
+                            Our services are aimed at enhancing personal and psychological well-being, empowering individuals to achieve happiness and success.
+                        </p>
+                    </div>
+                </section>
+                
+            </div>
+            <h1>Services</h1>
+            <div id="services" class="contact-card">
+                <section id="well-being-center">
+                    <h1>Happiness & Well-Being Center</h1>
+                    <p>
+                        The Sherubtse Happiness and Well-being Center (HWC) is here to help you fulfill your academic, social, emotional, and personal potential 
+                        by gaining understanding and insight into your strengths and challenges, and to help you put into effect changes that will enable you to 
+                        achieve your desired result.
+                    </p>
+                
+                    <div class="info-card">
+                        <h2>Services Offered</h2>
+                        <ul class="criteria-list">
+                            <li>One to one counselling</li>
+                            <li>Group counselling</li>
+                            <li>Mindfulness and Yoga</li>
+                            <li>Information on digital platform</li>
+                            <li>Monthly newsletter</li>
+                            <li>Self-awareness and self-leadership</li>
+                            <li>Mindfulness-Based Basic Counselling Skills</li>
+                            <li>Stress and Time Management</li>
+                        </ul>
+                    </div>
+                
+                    <div class="info-card">
+                        <h2>Location</h2>
+                        <p>
+                            Inside the Student Service Village, top floor, above the office of DSA, rear to cafeteria road.
+                        </p>
+                    </div>
+                
+                    <div class="info-card">
+                        <h2>Digital Platform</h2>
+                        <p>
+                            The center has a virtual digital platform that serves as a communication tool, resource bank, and information center 
+                            for students and staff of Sherubtse. The platform has different features dedicated to several services, including online counseling services.
+                        </p>
+                        <p><strong>How do you log in?</strong></p>
+                        <p>Go to <a href="https://sc.emcwub.pce.edu.bt/" target="_blank">https://sc.emcwub.pce.edu.bt/</a></p>
+                        <ul>
+                            <li>Username: your student ID or employee ID</li>
+                            <li>Password: your student ID or employee ID</li>
+                        </ul>
+                        <p>
+                            (You can also use the "lost password" link on the login page if your default password doesn’t work.)
+                        </p>
+                    </div>
+                
+                    <div class="info-card">
+                        <h2>Student Counselling</h2>
+                        <p>
+                            The Happiness and Well-Being Center helps through listening and working on positive personal development. 
+                            We help you understand and change your inner experiences and worldview. 
+                            When you change your world, you change the world.
+                        </p>
+                    </div>
+                </section>
+            </div>
+            <h1>Upcoming Events</h1>
+            <div id="Upcoming Events" class="contact-card">
+                <p>Mindfulness Based Basic Counselling Course</p>
+            </div>
+            <h1>Center Contact</h1>
+            <div id="Center Contact" class="contact-card">
+                <section id="well-being-center-team">
+                    <h1>Happiness & Well-Being Center Team</h1>
+                
+                    <div class="team-card">
+                        <h2>Thinley Namgyel</h2>
+                        <p><strong>Center Manager</strong></p>
+                        <p><strong>Dean of Student Affairs</strong></p>
+                        <p>Email: <a href="mailto:thinley.sherubtse@rub.edu.bt">thinley.sherubtse@rub.edu.bt</a></p>
+                        <p>Phone: 17731385</p>
+                    </div>
+                
+                    <div class="team-card">
+                        <h2>Sonam Tenzin</h2>
+                        <p><strong>Student Service Officer / Counsellor</strong></p>
+                        <p>Email: <a href="mailto:sonamtenzin.sherubtse@rub.edu.bt">sonamtenzin.sherubtse@rub.edu.bt</a></p>
+                        <p>Phone: 17685103</p>
+                    </div>
+                
+                    <div class="team-card">
+                        <h2>Tashi Yangzom</h2>
+                        <p><strong>Student Service Officer / Counsellor</strong></p>
+                        <p>Email: <a href="mailto:tashiyangzom.sherubtse@rub.edu.bt">tashiyangzom.sherubtse@rub.edu.bt</a></p>
+                        <p>Phone: 17656244</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- Newsletter Section -->
+    <section id="newsletter">
+        <div class="contact-container">
+            <h1>Newsletter</h1>
+            <ul>
+                <li><a href="newsletter-july2021.html" target="_blank">July 2021</a></li>
+                <li><a href="newsletter-august2021.html" target="_blank">August 2021</a></li>
+            </ul>
+            <p><a href="brochure.pdf" target="_blank">Click here to download brochure</a></p>
+            <p><a href="stress-time-management.pdf" target="_blank">Click here to download handout on Stress & Time Management</a></p>
+            <p><a href="monthly-newsletter.html" target="_blank">Monthly Newsletter</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo-contact">
+                <img src="logo.png" alt="Sherubtse College Logo" class="footer-logo-image">
+                <div class="footer-contact-info">
+                    <h3>Sherubtse College</h3>
+                    <p>Kanglung, Trashigang</p>
+                    <p>Email: <a href="mailto:ict.sherubtse@rub.edu.bt">ict.sherubtse@rub.edu.bt</a></p>
+                    <p>Phone: +975-4-535128</p>
+                </div>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Downloads</h4>
+                <ul>
+                    <li><a href="#">Student Handbook</a></li>
+                    <li><a href="#">Organogram</a></li>
+                    <li><a href="#">Wheel of Academic</a></li>
+                    <li><a href="#">College Prospectus</a></li>
+                    <li><a href="#">Zhib Tshol</a></li>
+                    <li><a href="#">Tower Newsletter</a></li>
+                    <li><a href="#">College Magazine</a></li>
+                    <li><a href="#">Forms</a></li>
+                    <li><a href="#">Student Code of Conduct</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>E-Services</h4>
+                <ul>
+                    <li><a href="#">VLE</a></li>
+                    <li><a href="#">JSTOR</a></li>
+                    <li><a href="#">ProQuest Ebook</a></li>
+                    <li><a href="#">Online Catalogue</a></li>
+                    <li><a href="#">RUB IMS</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Office of the Vice Chancellor</a></li>
+                    <li><a href="#">G2C Services</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">MoICE</a></li>
+                    <li><a href="#">RCSC</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer-copy">&copy; 2024 Sherubtse College. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

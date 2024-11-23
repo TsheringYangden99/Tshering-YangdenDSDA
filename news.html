@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherubtse College - About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* News Section */
+        .news-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .news-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .news-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        .news-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 4px solid #007a3d;
+        }
+
+        .news-content {
+            padding: 20px;
+        }
+
+        .news-content h3 {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .news-content p {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .news-item-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9em;
+            color: #555;
+            padding-top: 10px;
+            border-top: 2px solid #f1f1f1;
+        }
+
+        .news-item-footer span {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Sherubtse College Logo" class="logo-image">
+            <h1>Sherubtse College</h1>
+          </div>
+          <nav aria-label="Main Navigation">
+            <ul class="menu">
+              <li><a href="about.html" aria-label="Learn more about Sherubtse College">About</a></li>
+              <li><a href="admission.html" aria-label="Find out about admissions">Academic</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" aria-label="Explore student services">Student services</a>
+                <div class="dropdown-content">
+                      <a href="https://sites.google.com/view/sherubtselibrary" class="unique-link blob1">Elibary</a>
+                      <a href="Ebook.html" class="unique-link blob2">Ebook and journal</a>
+                      <a href="Accomodation.html" class="unique-link blob3">Accomodation</a>
+                      <a href="Happinese and well being center.html" class="unique-link blob4">Happiness and wellbeing</a>
+                      <a href="club.html" class="unique-link blob5">club</a>
+                      <a href="events.html" class="unique-link blob6">Events</a>
+                      <a href="studentassocation.html" class="unique-link blob7">Student Association</a>
+                      <a href="games and sports.html" class="unique-link blob7">Games and Sports</a>
+                      <a href="Examrecords.html" class="unique-link blob7">Examination Records</a>
+                </div>
+              </li>
+              <li><a href="contact.html" aria-label="Contact Sherubtse College">Contact</a></li>
+            </ul>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+          </nav>
+          <script>
+            // JavaScript for dropdown and responsive menu
+            document.querySelector('.dropbtn').addEventListener('click', function () {
+              const dropdownContent = this.nextElementSibling;
+              dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+              this.setAttribute('aria-expanded', dropdownContent.style.display === 'block');
+            });
+          
+            document.getElementById('hamburger-menu').addEventListener('click', function () {
+              const menu = document.querySelector('.menu');
+              menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+          </script>
+          
+    </header>
+    <body>
+        <section class="news-container">
+            <div class="news-item">
+                <img src="News1.jpg" alt="Research Workshop" class="news-image">
+                <div class="news-content">
+                    <h3>Sherubtse College Hosts Research Workshop and Guest Lecture on AI, Financial Literacy, and Socio-Political Theories</h3>
+                    <p>On September 30, 2024, Sherubtse College hosted a comprehensive research workshop and a series of engaging guest lectures featuring prominent scholars discussing cutting-edge topics...</p>
+                </div>
+                <div class="news-item-footer">
+                    <span>September 30, 2024</span>
+                    <span>By Sherubtse College</span>
+                </div>
+            </div>
+    
+            <div class="news-item">
+                <img src="News2.jpeg" alt="Symmetries Workshop" class="news-image">
+                <div class="news-content">
+                    <h3>Workshop on Symmetries, Data Science, and AI for Physicists</h3>
+                    <p>The International Center for Theoretical Physics, working with the University of Sussex and DISCnet, is organizing a 5-day intensive workshop in Symmetries, Data Science...</p>
+                </div>
+                <div class="news-item-footer">
+                    <span>October 10, 2024</span>
+                    <span>By ICTP</span>
+                </div>
+            </div>
+    
+            <div class="news-item">
+                <img src="News3.jpg" alt="Academic Talk" class="news-image">
+                <div class="news-content">
+                    <h3>Academic Talk</h3>
+                    <p>Two professors from the Department of Mathematical Sciences delivered an academic talk as part of the Monday morning assembly activity, attended by students and faculty...</p>
+                </div>
+                <div class="news-item-footer">
+                    <span>October 12, 2024</span>
+                    <span>By Mathematical Sciences Dept.</span>
+                </div>
+            </div>
+    
+            <div class="news-item">
+                <img src="News4.jpg" alt="Graduation Ceremony" class="news-image">
+                <div class="news-content">
+                    <h3>Glimpses of the College Graduation</h3>
+                    <p>The ceremony was attended by HE Minister for Home Affairs and the Hon'ble Dasho Dzongda. A total of 433 students graduated from 18 undergraduate programmes...</p>
+                </div>
+                <div class="news-item-footer">
+                    <span>October 20, 2024</span>
+                    <span>By Sherubtse College</span>
+                </div>
+            </div>
+    
+            <div class="news-item">
+                <img src="News5.jpg" alt="Coronation Anniversary" class="news-image">
+                <div class="news-content">
+                    <h3>Sherubtse Celebrates 15th Coronation Anniversary</h3>
+                    <p>Sherubtse students, staff, and faculty gathered to celebrate the 15th Coronation Day Anniversary of our beloved King. Butter lamps were offered as a mark of reverence...</p>
+                </div>
+                <div class="news-item-footer">
+                    <span>October 22, 2024</span>
+                    <span>By Sherubtse College</span>
+                </div>
+            </div>
+    
+            <div class="news-item">
+                <img src="News6.jpg" alt="Mental Health Talk" class="news-image">
+                <div class="news-content">
+                    <h3>Professor Wim Highlights the Importance of Mental Health in Young People</h3>
+                    <p>Mr. Wim, a faculty member of Social Science at Sherubtse College, delivered a talk on the importance of mental health among young people, especially with semester exams approaching...</p>
+                </div>
+                <div class="news-item-footer">
+                    <span>October 25, 2024</span>
+                    <span>By Sherubtse College</span>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo-contact">
+                    <img src="logo.png" alt="Sherubtse College Logo" class="footer-logo-image">
+                    <div class="footer-contact-info">
+                        <h3>Sherubtse College</h3>
+                        <p>Kanglung, Trashigang</p>
+                        <p>Email: <a href="mailto:ict.sherubtse@rub.edu.bt">ict.sherubtse@rub.edu.bt</a></p>
+                        <p>Phone: +975-4-535128</p>
+                    </div>
+                </div>
+        
+                <div class="footer-section">
+                    <h4>Downloads</h4>
+                    <ul>
+                        <li><a href="#">Student Handbook</a></li>
+                        <li><a href="#">Organogram</a></li>
+                        <li><a href="#">Wheel of Academic</a></li>
+                        <li><a href="#">College Prospectus</a></li>
+                        <li><a href="#">Zhib Tshol</a></li>
+                        <li><a href="#">Tower Newsletter</a></li>
+                        <li><a href="#">College Magazine</a></li>
+                        <li><a href="#">Forms</a></li>
+                        <li><a href="#">Student Code of Conduct</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h4>E-Services</h4>
+                    <ul>
+                        <li><a href="#">VLE</a></li>
+                        <li><a href="#">JSTOR</a></li>
+                        <li><a href="#">ProQuest Ebook</a></li>
+                        <li><a href="#">Online Catalogue</a></li>
+                        <li><a href="#">RUB IMS</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Office of the Vice Chancellor</a></li>
+                        <li><a href="#">G2C Services</a></li>
+                        <li><a href="#">Library</a></li>
+                        <li><a href="#">MoICE</a></li>
+                        <li><a href="#">RCSC</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer-copy">&copy; 2024 Sherubtse College. All rights reserved.</p>
+        </footer>
+        
+    </body>
+    </html>
+    
