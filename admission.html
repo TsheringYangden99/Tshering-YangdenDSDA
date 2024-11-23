@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherubtse College - About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Menu Styling */
+        .mini-menu ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .mini-menu li {
+            border: 2px solid #333; /* Border around each box */
+            padding: 10px 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .mini-menu li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .mini-menu li:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .mini-menu li a:hover {
+            color: #fff;
+        }
+        /* Menu Styling */
+.mini-menu {
+    margin-top: 20px; /* Add space between header and mini menu */
+}
+
+.mini-menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mini-menu li {
+    border: 2px solid rgb(63, 8, 228); /* Border around each box */
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.mini-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.mini-menu li:hover {
+    background-color: hsl(243, 88%, 41%);
+    color: #fff;
+}
+
+.mini-menu li a:hover {
+    color: #fff;
+}
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+thead th {
+    background-color: #005b99; /* Darker background for headers */
+    color: #fff;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey background for even rows */
+}
+
+tbody tr:hover {
+    background-color: #e0f7fa; /* Light blue on hover for rows */
+}
+
+table th, table td {
+    text-align: center;
+}
+
+table th {
+    font-weight: bold;
+}
+
+.criteria-list {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.notice {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-top: 20px;
+    border-left: 4px solid #005b99;
+}
+/* Card Container */
+.card {
+    width: 100%;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    border-left: 4px solid #4CAF50; /* Accent border on the left */
+    transition: transform 0.3s ease; /* Animation for hover effect */
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings in Card */
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333; /* Dark gray for contrast */
+    font-weight: 600;
+}
+
+/* Paragraphs in Card */
+.card p {
+    color: #555; /* Medium gray for readability */
+    line-height: 1.6;
+}
+
+/* Links in Card */
+.card a {
+    color: #0077cc; /* Blue for visibility */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* List Styling */
+.criteria-list {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.criteria-list li {
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        padding: 15px;
+    }
+
+    .card h2 {
+        font-size: 1.3rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Sherubtse College Logo" class="logo-image">
+            <h1>Sherubtse College</h1>
+          </div>
+          <nav aria-label="Main Navigation">
+            <ul class="menu">
+              <li><a href="about.html" aria-label="Learn more about Sherubtse College">About</a></li>
+              <li><a href="admission.html" aria-label="Find out about admissions">Academic</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" aria-label="Explore student services">Student services</a>
+                <div class="dropdown-content">
+                      <a href="https://sites.google.com/view/sherubtselibrary" class="unique-link blob1">Elibary</a>
+                      <a href="Ebook.html" class="unique-link blob2">Ebook and journal</a>
+                      <a href="Accomodation.html" class="unique-link blob3">Accomodation</a>
+                      <a href="Happinese and well being center.html" class="unique-link blob4">Happiness and wellbeing</a>
+                      <a href="club.html" class="unique-link blob5">club</a>
+                      <a href="events.html" class="unique-link blob6">Events</a>
+                      <a href="studentassocation.html" class="unique-link blob7">Student Association</a>
+                      <a href="games and sports.html" class="unique-link blob7">Games and Sports</a>
+                      <a href="Examrecords.html" class="unique-link blob7">Examination Records</a>
+                </div>
+              </li>
+              <li><a href="contact.html" aria-label="Contact Sherubtse College">Contact</a></li>
+            </ul>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+          </nav>
+          <script>
+            // JavaScript for dropdown and responsive menu
+            document.querySelector('.dropbtn').addEventListener('click', function () {
+              const dropdownContent = this.nextElementSibling;
+              dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+              this.setAttribute('aria-expanded', dropdownContent.style.display === 'block');
+            });
+          
+            document.getElementById('hamburger-menu').addEventListener('click', function () {
+              const menu = document.querySelector('.menu');
+              menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+          </script>
+    </header>
+    <h2>Admission</h2>
+    <section class="mini-menu">
+        <ul>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="Scholarship.html">Scholarships</a></li>
+            <li><a href="calender.html">calender</a></li>
+        </ul>
+    </section>
+        <!-- Card for Admission Overview -->
+        <div class="card">
+            <h2>Admission into RUB Programmes for the Academic Year 2024</h2>
+            <p>The online application for College of Science and Technology, Gyalpozhing College of Information Technology, Paro College of Education, Gedu College of Business Studies, Samtse College of Education, and three new programmes at Sherubtse College will open on <strong>1st March</strong> and close on <strong>22nd March 2024</strong>. The online application links will be announced by the Royal University of Bhutan.</p>
+            <p>Applications for the College of Natural Resources, Jigme Namgyel Engineering College, and Sherubtse College (BSc in Physics, BSc in Chemistry, BSc in Mathematics, and BSc in Life Science) will open on <strong>5th April</strong> and close on <strong>5th May 2024</strong>.</p>
+        </div>
+    
+        <!-- Card for Tuition Fees -->
+        <div class="card">
+            <h2>Tuition Fees for Academic Year 2024-2025</h2>
+            <p>For Arts and Humanities programmes, tuition is set at <strong>Nu. 75,457</strong>, while for Science and Engineering programmes, it is <strong>Nu. 93,479</strong>. An annual 2% increase applies. Tuition is payable in two installments, with 50% due at the start of each semester.</p>
+            <p>For additional details, please visit the respective colleges’ websites.</p>
+        </div>
+    
+        <!-- Card for Scholarship Information -->
+        <div class="card">
+            <h2>Special Scholarship in Leadership for 6 Students</h2>
+            <p>This scholarship is available for applicants to the BSc in Life Science, BSc in Mathematics, BSc in Chemistry, and BSc in Physics programmes. Aspiring candidates must fulfill the following criteria:</p>
+            <ul class="criteria-list">
+                <li>Be a regular student in 2023</li>
+                <li>Have served as the School Captain in the academic year 2023</li>
+                <li>Meet the minimum criteria for the programme at Sherubtse College</li>
+                <li>Merit ranking will be based on the aggregate of four subjects (English plus three best subjects)</li>
+            </ul>
+            <p>To apply, send an email to <a href="mailto:records.sherubtse@rub.edu.bt">records.sherubtse@rub.edu.bt</a> by <strong>19th April 2024</strong>. The application form can be downloaded from <a href="https://www.sherubtse.edu.bt" target="_blank">www.sherubtse.edu.bt</a>. If no acknowledgment is received by <strong>23rd April 2024</strong>, please contact the Student Record Office at <strong>04 535341</strong>.</p>
+        </div>
+    </main>
+    <table>
+        <thead>
+            <tr>
+                <th>SL#</th>
+                <th>Programme</th>
+                <th>Eligibility Criteria</th>
+                <th>Ability Rating Points</th>
+                <th>Higher Education Grant</th>
+                <th>Self-financed</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bachelors of Economics and Political Science</td>
+                <td>Class XII pass students with a minimum of 50% in Mathematics/Business Mathematics</td>
+                <td>Mathematics/Business Mathematics – 5<br>Physics/Geography/Accountancy – 4<br>3 other subjects – 1</td>
+                <td>120</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Bachelors of Digital Communications and Project Management</td>
+                <td>Class XII pass students with a minimum of 50% in Mathematics/Business Mathematics</td>
+                <td>Mathematics/Business Mathematics – 5<br>Physics/Geography/Accountancy – 4<br>3 other subjects – 1</td>
+                <td>120</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Bachelors of Data Science and Data Analytics</td>
+                <td>Class XII pass science students with a minimum of 55% in Biology and 45% in Chemistry.</td>
+                <td>Biology – 5<br>Chemistry – 4<br>Physics – 3<br>English – 3<br>1 other subject – 1</td>
+                <td>30</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>BSc in Life Science</td>
+                <td>Class XII pass science students with a minimum of 55% in Biology and 45% in Chemistry.</td>
+                <td>Biology – 5<br>Chemistry – 4<br>Physics – 3<br>English – 3<br>1 other subject – 1</td>
+                <td>30</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>BSc in Mathematics</td>
+                <td>Class XII pass science students with a minimum of 55% in Mathematics and 45% in Chemistry and Physics.</td>
+                <td>Mathematics – 5<br>Physics – 4<br>Chemistry – 3<br>English – 2<br>1 other subject – 1</td>
+                <td>30</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>BSc in Chemistry</td>
+                <td>Class XII pass science students with a minimum of 55% in Chemistry and 45% in Physics and Maths.</td>
+                <td>Chemistry – 5<br>Physics – 4<br>Mathematics – 3<br>English – 2<br>1 other subject – 1</td>
+                <td>30</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>BSc in Physics</td>
+                <td>Class XII pass science students with a minimum of 55% in Physics, 45% in Mathematics and Chemistry.</td>
+                <td>Physics – 5<br>Mathematics – 4<br>Chemistry – 3<br>English – 2<br>1 other subject – 1</td>
+                <td>30</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>240</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="notice">
+        <p>Reporting date for 1st year students: Please visit the College website <a href="https://www.sherubtse.edu.bt" target="_blank">www.sherubtse.edu.bt</a> for more information.</p>
+    </div>
+    <div class="notice">
+        <p>For more details, please refer to the <a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/02/Scholarship-in-Leadership-Form.pdf" target="_blank">Leadership Scholarship Form</a> and <a href="http://admission.rub.edu.bt/" target="_blank">Applications to BSc Programme</a> pages.</p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <section class="footer-logo-contact">
+                <img src="logo.png" alt="Sherubtse College Logo" class="footer-logo-image">
+                <div class="footer-contact-info">
+                    <h3>Sherubtse College</h3>
+                    <p>Kanglung, Trashigang</p>
+                    <p>Email: <a href="mailto:ict.sherubtse@rub.edu.bt">ict.sherubtse@rub.edu.bt</a></p>
+                    <p>Phone: +975-4-535128</p>
+                </div>
+            </section>
+    
+            <section class="footer-section">
+                <h4>Downloads</h4>
+                <ul>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/Student-Handbook_2024-2025-1.pdf">Student Handbook</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Organogram-1.pdf">Organogram</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/The-Wheel-of-Academic-Law.pdf">Wheel of Academic</a></li>
+                    <li><a href="#">College Prospectus</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Zhib-Tshol.pdf">Zhib Tshol</a></li>
+                    <li><a href="#">Tower Newsletter</a></li>
+                    <li><a href="#">College Magazine</a></li>
+                    <li><a href="Forms.html">Forms</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/RUB-Student-Code-of-Conduct-July-2022.pdf">Student Code of Conduct</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer-section">
+                <h4>E-Services</h4>
+                <ul>
+                    <li><a href="https://vle.sherubtse.edu.bt/">VLE</a></li>
+                    <li><a href="https://www.jstor.org/">JSTOR</a></li>
+                    <li><a href="https://ebookcentral.proquest.com/auth/lib/sherubtsebt/login.action?returnURL=https%3A%2F%2Febookcentral.proquest.com%2Flib%2Fsherubtsebt%2Fhome.action">ProQuest Ebook</a></li>
+                    <li><a href="#">Online Catalogue</a></li>
+                    <li><a href="https://ims.rub.edu.bt/public/auth/view-login">RUB IMS</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Office of the Vice Chancellor</a></li>
+                    <li><a href="#">G2C Services</a></li>
+                    <li><a href="https://sites.google.com/view/sherubtselibrary?pli=1">Library</a></li>
+                    <li><a href="https://www.moice.gov.bt/">MoICE</a></li>
+                    <li><a href="https://www.rcsc.gov.bt/en/">RCSC</a></li>
+                </ul>
+            </section>
+        </div>
+        <p class="footer-copy">&copy; 2024 Sherubtse College. All rights reserved.</p>
+    </footer>
+    </body>
+    </html>
+    
+    

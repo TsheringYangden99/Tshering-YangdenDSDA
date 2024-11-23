@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherubtse College - About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Program Section */
+        .programs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .program {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 300px;
+            max-width: 500px;
+            box-sizing: border-box;
+        }
+
+        /* Lecturer Information */
+        .lecturers {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .lecturer {
+            text-align: center;
+        }
+
+        .lecturer-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .lecturer h4 {
+            font-size: 1.1rem;
+            color: #005b99;
+        }
+
+        .lecturer p {
+            font-size: 0.9rem;
+            color: #777;
+        }
+/* Remove unnecessary margin from the top of the section */
+.core-values {
+    margin-top: 0; /* Remove any margin at the top */
+}
+
+/* Ensure no large space between the "About Us" and "faculty-arts-humanities" section */
+h2.section-title {
+    margin-top: 0; /* Reset any margin on the title */
+}
+
+/* Reduce the padding of the section */
+section {
+    padding: 20px 20px; /* Adjust the padding as needed */
+}
+/* General settings for sections */
+section {
+    padding: 20px 0; /* Consistent padding */
+}
+
+h2 {
+    margin-bottom: 10px; /* Adjust the bottom margin for headings */
+}
+
+/* Specific tweaks for the .core-values section */
+.core-values {
+    margin-top: 10px; /* Adjust the gap between sections */
+}
+.programs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 30px;
+}
+
+.program {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Sherubtse College Logo" class="logo-image">
+            <h1>Sherubtse College</h1>
+          </div>
+          <nav aria-label="Main Navigation">
+            <ul class="menu">
+              <li><a href="index.html" aria-label="Learn more about Sherubtse College">Home</a></li>
+              <li><a href="admission.html" aria-label="Find out about admissions">Academic</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" aria-label="Explore student services">Student services</a>
+                <div class="dropdown-content">
+                      <a href="https://sites.google.com/view/sherubtselibrary" class="unique-link blob1">Elibary</a>
+                      <a href="Ebook.html" class="unique-link blob2">Ebook and journal</a>
+                      <a href="Accomodation.html" class="unique-link blob3">Accomodation</a>
+                      <a href="Happinese and well being center.html" class="unique-link blob4">Happiness and wellbeing</a>
+                      <a href="club.html" class="unique-link blob5">club</a>
+                      <a href="events.html" class="unique-link blob6">Events</a>
+                      <a href="studentassocation.html" class="unique-link blob7">Student Association</a>
+                      <a href="games and sports.html" class="unique-link blob7">Games and Sports</a>
+                      <a href="Examrecords.html" class="unique-link blob7">Examination Records</a>
+                </div>
+              </li>
+              <li><a href="contact.html" aria-label="Contact Sherubtse College">Contact</a></li>
+            </ul>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+          </nav>
+          <script>
+            // JavaScript for dropdown and responsive menu
+            document.querySelector('.dropbtn').addEventListener('click', function () {
+              const dropdownContent = this.nextElementSibling;
+              dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+              this.setAttribute('aria-expanded', dropdownContent.style.display === 'block');
+            });
+          
+            document.getElementById('hamburger-menu').addEventListener('click', function () {
+              const menu = document.querySelector('.menu');
+              menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+          </script>
+          
+    </header>
+    <main>
+        <h2>About Us</h2>
+        <!-- Mini Menu inside the page with links to separate pages -->
+        <section class="core-values">
+            <h2 class="section-title">
+                <img src="logo.png" alt="Sherubtse College Logo" class="logo">
+                Faculty of Physical Sciences
+            </h2>
+            <div class="programs">
+                <div class="program">
+                    <h3>Chemistry Programme</h3>
+                    
+                    <!-- Lecturer Information -->
+                    <div class="lecturers">
+                        <div class="lecturer">
+                            <img src="tshewang-dendup.png" alt="Lecturer 1" class="lecturer-img">
+                            <h4>Tshewang Dendup
+                                Assistant Professor
+                                </h4>
+                            <p>MSc Chemical Biology.</p>
+                        </div>
+                        <div class="lecturer">
+                            <img src="sangay-wangchuk.png" alt="Lecturer 2" class="lecturer-img">
+                            <h4>Sangay Wangchuk
+                                Lecturer
+                                </h4>
+                            <p> MSc Chemistry (Inorganic)</p>
+                        </div>
+                        <div class="lecturer">
+                            <img src="Dr.-Jas-Raj-Subba.png" alt="Lecturer 3" class="lecturer-img">
+                            <h4>Dr. Jas Raj Subba
+                                Lecturer
+                                </h4>
+                            <p>PhD Chemistry</p>
+                        </div>
+                        <div class="lecturer">
+                            <img src="punam-mufchan.png" alt="Lecturer 4" class="lecturer-img">
+                            <h4>Punam Mafchan
+                                Lecturer
+                                </h4>
+                            <p>  MSc Chemistry.</p>
+                        </div>
+                        <div class="lecturer">
+                            <img src="kd.png" alt="Lecturer 4" class="lecturer-img">
+                            <h4>Karma Dorji
+                                Assistant Lecturer
+                                </h4>
+                            <p> BSc Chemistry.</p>
+                        </div>
+                        <div class="lecturer">
+                            <img src="nime-thering-e1722246854364.png" alt="Lecturer 4" class="lecturer-img">
+                            <h4>Nim Tshering
+                                Assistant Lecturer
+                                </h4>
+                            <p> BSc Chemistry </p>
+                        </div>
+                        <div class="lecturer">
+                            <img src="yethro-lhamop-e1722247031529.png" alt="Lecturer 4" class="lecturer-img">
+                            <h4>Yetho Lhamo
+                                Assistant Lecturer
+                            </h4>
+                            <p> BSc Chemistry </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="program">
+                    <h3>Physics Programme</h3> 
+                    <!-- Lecturer Information -->
+                    <div class="lecturers">
+                        <div class="lecturer">
+                            <img src="Nachiketa-Homchaudhuri.png" alt="Lecturer 5" class="lecturer-img">
+                            <h4>Nachiketa Homchaudhuri
+                                Assistant Professor
+                            </h4>
+                            <p>M  MSc Physics</p>
+                        </div>
+                        <div class="lecturer">
+                            <img src="sacha-thinley.png" alt="Lecturer 6" class="lecturer-img">
+                            <h4>Shacha Thinley
+                                Associate Lecturer
+                            </h4>
+                            <p>MSc Physics</p>
+                        </div>
+                        <div class="lecturer">
+                            <img src="Samten-Tshering.png" alt="Lecturer 7" class="lecturer-img">
+                            <h4>Mon Bahadur Ghalley
+                                Associate Lecturer
+                            </h4>
+                            <p>MSc in physics</p>
+                        </div>
+                        <div class="lecturer">
+                            <img src="karma-tenzin.png" alt="Lecturer 8" class="lecturer-img">
+                            <h4>Karma Tenzin
+                                Associate Lecturer
+                            </h4>
+                            <p> MSc Physics</p>
+                        </div>
+                        <div class="lecturer">
+                            <img src="rudra-lal-e1721903815996.png" alt="Lecturer 8" class="lecturer-img">
+                            <h4>Rudra Lal Adhikari
+                                Associate Lecturer
+                            </h4>
+                            <p>MSc. Electrical and Electronic</p>
+                        </div>
+                        <div class="lecturer">
+                            <img src="sonam-phuntsho-e1722246386665.png" alt="Lecturer 8" class="lecturer-img">
+                            <h4>Sonam Phuntsho
+                                Assistant Lecturer
+                            </h4>
+                            <p>BSc Physics</p>
+                        </div>
+                        <div class="lecturer">
+                            <img src="PHURBA-DORJI.png" alt="Lecturer 8" class="lecturer-img">
+                            <h4>Phurpa Samdrup
+                                Assistant Lecturer
+                            </h4>
+                            <p>BSc Physics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <section class="footer-logo-contact">
+                <img src="logo.png" alt="Sherubtse College Logo" class="footer-logo-image">
+                <div class="footer-contact-info">
+                    <h3>Sherubtse College</h3>
+                    <p>Kanglung, Trashigang</p>
+                    <p>Email: <a href="mailto:ict.sherubtse@rub.edu.bt">ict.sherubtse@rub.edu.bt</a></p>
+                    <p>Phone: +975-4-535128</p>
+                </div>
+            </section>
+    
+            <section class="footer-section">
+                <h4>Downloads</h4>
+                <ul>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/Student-Handbook_2024-2025-1.pdf">Student Handbook</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Organogram-1.pdf">Organogram</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/The-Wheel-of-Academic-Law.pdf">Wheel of Academic</a></li>
+                    <li><a href="#">College Prospectus</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Zhib-Tshol.pdf">Zhib Tshol</a></li>
+                    <li><a href="#">Tower Newsletter</a></li>
+                    <li><a href="#">College Magazine</a></li>
+                    <li><a href="Forms.html">Forms</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/RUB-Student-Code-of-Conduct-July-2022.pdf">Student Code of Conduct</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer-section">
+                <h4>E-Services</h4>
+                <ul>
+                    <li><a href="https://vle.sherubtse.edu.bt/">VLE</a></li>
+                    <li><a href="https://www.jstor.org/">JSTOR</a></li>
+                    <li><a href="https://ebookcentral.proquest.com/auth/lib/sherubtsebt/login.action?returnURL=https%3A%2F%2Febookcentral.proquest.com%2Flib%2Fsherubtsebt%2Fhome.action">ProQuest Ebook</a></li>
+                    <li><a href="#">Online Catalogue</a></li>
+                    <li><a href="https://ims.rub.edu.bt/public/auth/view-login">RUB IMS</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Office of the Vice Chancellor</a></li>
+                    <li><a href="#">G2C Services</a></li>
+                    <li><a href="https://sites.google.com/view/sherubtselibrary?pli=1">Library</a></li>
+                    <li><a href="https://www.moice.gov.bt/">MoICE</a></li>
+                    <li><a href="https://www.rcsc.gov.bt/en/">RCSC</a></li>
+                </ul>
+            </section>
+        </div>
+        <p class="footer-copy">&copy; 2024 Sherubtse College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+ 

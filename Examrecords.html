@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherubtse College - Examination Records</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .section-content {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .info-box {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-box h4 {
+            color: #003366;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .info-box ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .info-box ul li {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: #003366;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Sherubtse College Logo" class="logo-image">
+            <h1>Sherubtse College</h1>
+          </div>
+          <nav aria-label="Main Navigation">
+            <ul class="menu">
+              <li><a href="about.html" aria-label="Learn more about Sherubtse College">About</a></li>
+              <li><a href="admission.html" aria-label="Find out about admissions">Academic</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" aria-label="Explore student services">Student services</a>
+                <div class="dropdown-content">
+                      <a href="https://sites.google.com/view/sherubtselibrary" class="unique-link blob1">Elibary</a>
+                      <a href="Ebook.html" class="unique-link blob2">Ebook and journal</a>
+                      <a href="Accomodation.html" class="unique-link blob3">Accomodation</a>
+                      <a href="Happinese and well being center.html" class="unique-link blob4">Happiness and wellbeing</a>
+                      <a href="club.html" class="unique-link blob5">club</a>
+                      <a href="events.html" class="unique-link blob6">Events</a>
+                      <a href="studentassocation.html" class="unique-link blob7">Student Association</a>
+                      <a href="games and sports.html" class="unique-link blob7">Games and Sports</a>
+                      <a href="Examrecords.html" class="unique-link blob7">Examination Records</a>
+                </div>
+              </li>
+              <li><a href="contact.html" aria-label="Contact Sherubtse College">Contact</a></li>
+            </ul>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+        </nav>
+        <script>
+            // JavaScript for dropdown and responsive menu
+            document.querySelector('.dropbtn').addEventListener('click', function () {
+                const dropdownContent = this.nextElementSibling;
+                dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+                this.setAttribute('aria-expanded', dropdownContent.style.display === 'block');
+            });
+
+            document.getElementById('hamburger-menu').addEventListener('click', function () {
+                const menu = document.querySelector('.menu');
+                menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+        </script>
+    </header>
+
+    <main>
+        <section>
+            <h2>Examination Records</h2>
+            <p class="section-content">
+                Please take note of the following information for obtaining duplicate student records documents from Sherubtse College:
+            </p>
+
+            <div class="info-box">
+                <h4>Mark Sheets and Certificates</h4>
+                <ul>
+                    <li>There is no charge for the first issuance of mark sheets and certificates, including the provisional certificate.</li>
+                    <li>Provisional certificates will be issued only prior to the graduates' convocation.</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h4>Duplicate Certificates</h4>
+                <ul>
+                    <li>Duplicate certificates will be issued by the Registrar.</li>
+                    <li>Duplicate transcripts will only be processed after providing evidence of payment.</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h4>Payment Details</h4>
+                <ul>
+                    <li>Payment should be made to Sherubtse College, Account Number [Account Number].</li>
+                    <li>The evidence of payment and relevant details should be emailed to <a href="mailto:records.sherubtse@rub.edu.bt">records.sherubtse@rub.edu.bt</a>.</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h4>Collection of Documents</h4>
+                <ul>
+                    <li>The necessary documents should be collected in person by a designated representative from the College.</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h4>Mailing Official Transcripts</h4>
+                <ul>
+                    <li>An electronic copy of the transcripts will be sent by the College at no cost.</li>
+                    <li>For hard copies of the transcripts, duplicate transcript fees and postage charges apply for mailing.</li>
+                    <li>Please send your request to <a href="mailto:records.sherubtse@rub.edu.bt">records.sherubtse@rub.edu.bt</a> along with a scanned copy of your transcript.</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h4>Processing Time</h4>
+                <ul>
+                    <li>The processing time is 3-5 working days, and it may extend further during vacation periods. Please consider this timeframe when making plans.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <section class="footer-logo-contact">
+                <img src="logo.png" alt="Sherubtse College Logo" class="footer-logo-image">
+                <div class="footer-contact-info">
+                    <h3>Sherubtse College</h3>
+                    <p>Kanglung, Trashigang</p>
+                    <p>Email: <a href="mailto:ict.sherubtse@rub.edu.bt">ict.sherubtse@rub.edu.bt</a></p>
+                    <p>Phone: +975-4-535128</p>
+                </div>
+            </section>
+    
+            <section class="footer-section">
+                <h4>Downloads</h4>
+                <ul>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/Student-Handbook_2024-2025-1.pdf">Student Handbook</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Organogram-1.pdf">Organogram</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/The-Wheel-of-Academic-Law.pdf">Wheel of Academic</a></li>
+                    <li><a href="#">College Prospectus</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Zhib-Tshol.pdf">Zhib Tshol</a></li>
+                    <li><a href="#">Tower Newsletter</a></li>
+                    <li><a href="#">College Magazine</a></li>
+                    <li><a href="Forms.html">Forms</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/RUB-Student-Code-of-Conduct-July-2022.pdf">Student Code of Conduct</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer-section">
+                <h4>E-Services</h4>
+                <ul>
+                    <li><a href="https://vle.sherubtse.edu.bt/">VLE</a></li>
+                    <li><a href="https://www.jstor.org/">JSTOR</a></li>
+                    <li><a href="https://ebookcentral.proquest.com/auth/lib/sherubtsebt/login.action?returnURL=https%3A%2F%2Febookcentral.proquest.com%2Flib%2Fsherubtsebt%2Fhome.action">ProQuest Ebook</a></li>
+                    <li><a href="#">Online Catalogue</a></li>
+                    <li><a href="https://ims.rub.edu.bt/public/auth/view-login">RUB IMS</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Office of the Vice Chancellor</a></li>
+                    <li><a href="#">G2C Services</a></li>
+                    <li><a href="https://sites.google.com/view/sherubtselibrary?pli=1">Library</a></li>
+                    <li><a href="https://www.moice.gov.bt/">MoICE</a></li>
+                    <li><a href="https://www.rcsc.gov.bt/en/">RCSC</a></li>
+                </ul>
+            </section>
+        </div>
+        <p class="footer-copy">&copy; 2024 Sherubtse College. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherubtse College - About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .announcements {
+            margin-top: 30px;
+        }
+
+        .announcement-item {
+            background-color: #fff;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .announcement-item h3 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .announcement-item p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .announcement-item .date {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .announcement-item a {
+            font-size: 16px;
+            color: #ff9c00;
+            text-decoration: none;
+        }
+
+        .announcement-item a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Sherubtse College Logo" class="logo-image">
+            <h1>Sherubtse College</h1>
+          </div>
+          <nav aria-label="Main Navigation">
+            <ul class="menu">
+              <li><a href="about.html" aria-label="Learn more about Sherubtse College">About</a></li>
+              <li><a href="admission.html" aria-label="Find out about admissions">Academic</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" aria-label="Explore student services">Student services</a>
+                <div class="dropdown-content">
+                      <a href="https://sites.google.com/view/sherubtselibrary" class="unique-link blob1">Elibary</a>
+                      <a href="Ebook.html" class="unique-link blob2">Ebook and journal</a>
+                      <a href="Accomodation.html" class="unique-link blob3">Accomodation</a>
+                      <a href="Happinese and well being center.html" class="unique-link blob4">Happiness and wellbeing</a>
+                      <a href="club.html" class="unique-link blob5">club</a>
+                      <a href="events.html" class="unique-link blob6">Events</a>
+                      <a href="studentassocation.html" class="unique-link blob7">Student Association</a>
+                      <a href="games and sports.html" class="unique-link blob7">Games and Sports</a>
+                      <a href="Examrecords.html" class="unique-link blob7">Examination Records</a>
+                </div>
+              </li>
+              <li><a href="contact.html" aria-label="Contact Sherubtse College">Contact</a></li>
+            </ul>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+          </nav>
+          <script>
+            // JavaScript for dropdown and responsive menu
+            document.querySelector('.dropbtn').addEventListener('click', function () {
+              const dropdownContent = this.nextElementSibling;
+              dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+              this.setAttribute('aria-expanded', dropdownContent.style.display === 'block');
+            });
+          
+            document.getElementById('hamburger-menu').addEventListener('click', function () {
+              const menu = document.querySelector('.menu');
+              menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+          </script>
+          
+    </header>
+    <main>
+        <section class="announcements">
+            <h1>Latest Announcements</h1>
+
+            <!-- Announcement 1 -->
+            <div class="announcement-item">
+                <h3>Shortlisted Candidates for Site Supervising Engineer</h3>
+                <p>November 21, 2024</p>
+                <p>Details for the shortlisted candidates for Site Supervising Engineer...</p>
+                <a href="Shortlisted Candidates.html">Read More</a>
+            </div>
+
+            <!-- Announcement 2 -->
+            <div class="announcement-item">
+                <h3>Selection Result for the post of ICT Technical Associate</h3>
+                <p>November 19, 2024</p>
+                <p>Details for the selection result for the post of ICT Technical Associate...</p>
+                <a href="Selection Result.html">Read More</a>
+            </div>
+
+            <!-- Announcement 3 -->
+            <div class="announcement-item">
+                <h3>Vacancy Announcement for Site Supervising Engineer</h3>
+                <p>November 04, 2024</p>
+                <p>Details regarding the vacancy for Site Supervising Engineer...</p>
+                <a href="Vacancy Announcement.html">Read More</a>
+            </div>
+
+            <!-- Announcement 4 -->
+            <div class="announcement-item">
+                <h3>Selection result for the post of Assistant ICT Officer</h3>
+                <p>September 17, 2024</p>
+                <p>Details for the selection result for the Assistant ICT Officer position...</p>
+                <a href="announcement4.html">Read More</a>
+            </div>
+
+            <!-- Announcement 5 -->
+            <div class="announcement-item">
+                <h3>Shortlisted ICT Officer Viva-voce</h3>
+                <p>September 06, 2024</p>
+                <p>Details regarding the shortlisted ICT Officer Viva-voce...</p>
+                <a href="announcement5.html">Read More</a>
+            </div>
+
+            <!-- Announcement 6 -->
+            <div class="announcement-item">
+                <h3>RA Result _Spring Semester 2024</h3>
+                <p>August 5, 2024</p>
+                <p>Details for RA Result in the Spring Semester 2024...</p>
+                <a href="announcement6.html">Read More</a>
+            </div>
+
+            <!-- Announcement 7 -->
+            <div class="announcement-item">
+                <h3>Shortlisted candidates for the post of contract faculty</h3>
+                <p>July 31, 2024</p>
+                <p>Details for the shortlisted candidates for the contract faculty position...</p>
+                <a href="announcement7.html">Read More</a>
+            </div>
+
+            <!-- Announcement 8 -->
+            <div class="announcement-item">
+                <h3>Selected Candidates for the post of Assistant Lecturer/Lecturer (Life Science)</h3>
+                <p>August 2, 2024</p>
+                <p>Details for the selected candidates for Assistant Lecturer/Lecturer (Life Science)...</p>
+                <a href="announcement8.html">Read More</a>
+            </div>
+
+            <!-- Announcement 9 -->
+            <div class="announcement-item">
+                <h3>Selected Candidates for the post of Assistant Lecturer/Lecturer (DSDA)</h3>
+                <p>July 30, 2024</p>
+                <p>Details for the selected candidates for Assistant Lecturer/Lecturer (DSDA)...</p>
+                <a href="announcement9.html">Read More</a>
+            </div>
+
+            <!-- Announcement 10 -->
+            <div class="announcement-item">
+                <h3>Vacancy Announcement for Contract Faculty</h3>
+                <p>July 19, 2024</p>
+                <p>Details regarding the vacancy for Contract Faculty...</p>
+                <a href="announcement10.html">Read More</a>
+            </div>
+
+            <!-- Announcement 11 -->
+            <div class="announcement-item">
+                <h3>Vacancy Announcement for Contract Faculty</h3>
+                <p>July 5, 2024</p>
+                <p>Details regarding the vacancy for Contract Faculty...</p>
+                <a href="announcement11.html">Read More</a>
+            </div>
+
+            <!-- Announcement 12 -->
+            <div class="announcement-item">
+                <h3>Gyalsung Exemption Letter for New Students</h3>
+                <p>June 3, 2024</p>
+                <p>Details for the Gyalsung Exemption Letter for New Students...</p>
+                <a href="announcement12.html">Read More</a>
+            </div>
+
+            <!-- Announcement 13 -->
+            <div class="announcement-item">
+                <h3>Selected Candidates for the New Programs under Self-finance</h3>
+                <p>May 30, 2024</p>
+                <p>Details for the selected candidates for New Programs under Self-finance...</p>
+                <a href="announcement13.html">Read More</a>
+            </div>
+
+            <!-- Announcement 14 -->
+            <div class="announcement-item">
+                <h3>Result of the selection interview for Assistant Finance Officer</h3>
+                <p>May 10, 2024</p>
+                <p>Details for the selection interview result for Assistant Finance Officer...</p>
+                <a href="announcement14.html">Read More</a>
+            </div>
+
+            <!-- Announcement 15 -->
+            <div class="announcement-item">
+                <h3>Selected Students for New Programmes</h3>
+                <p>May 1, 2024</p>
+                <p>Details for the selected students for New Programmes...</p>
+                <a href="announcement15.html">Read More</a>
+            </div>
+
+            <!-- Announcement 16 -->
+            <div class="announcement-item">
+                <h3>Shortlisted Candidates for Regular Recruitment</h3>
+                <p>April 22, 2024</p>
+                <p>Details for the shortlisted candidates for Regular Recruitment...</p>
+                <a href="announcement16.html">Read More</a>
+            </div>
+
+            <!-- Announcement 17 -->
+            <div class="announcement-item">
+                <h3>Admission Details for New Programmes</h3>
+                <p>April 5, 2024</p>
+                <p>Details for the Admission Process for New Programmes...</p>
+                <a href="announcement17.html">Read More</a>
+            </div>
+
+            <!-- Announcement 18 -->
+            <div class="announcement-item">
+                <h3>Shortlisted candidates for Data & Visualization Test</h3>
+                <p>April 1, 2024</p>
+                <p>Details for the shortlisted candidates for the Data & Visualization Test...</p>
+                <a href="announcement18.html">Read More</a>
+            </div>
+            <a href="addanouncement.html">
+                <button>Add Notice</button>
+            </a>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <section class="footer-logo-contact">
+                <img src="logo.png" alt="Sherubtse College Logo" class="footer-logo-image">
+                <div class="footer-contact-info">
+                    <h3>Sherubtse College</h3>
+                    <p>Kanglung, Trashigang</p>
+                    <p>Email: <a href="mailto:ict.sherubtse@rub.edu.bt">ict.sherubtse@rub.edu.bt</a></p>
+                    <p>Phone: +975-4-535128</p>
+                </div>
+            </section>
+    
+            <section class="footer-section">
+                <h4>Downloads</h4>
+                <ul>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/Student-Handbook_2024-2025-1.pdf">Student Handbook</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Organogram-1.pdf">Organogram</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/The-Wheel-of-Academic-Law.pdf">Wheel of Academic</a></li>
+                    <li><a href="#">College Prospectus</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Zhib-Tshol.pdf">Zhib Tshol</a></li>
+                    <li><a href="#">Tower Newsletter</a></li>
+                    <li><a href="#">College Magazine</a></li>
+                    <li><a href="Forms.html">Forms</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/RUB-Student-Code-of-Conduct-July-2022.pdf">Student Code of Conduct</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer-section">
+                <h4>E-Services</h4>
+                <ul>
+                    <li><a href="https://vle.sherubtse.edu.bt/">VLE</a></li>
+                    <li><a href="https://www.jstor.org/">JSTOR</a></li>
+                    <li><a href="https://ebookcentral.proquest.com/auth/lib/sherubtsebt/login.action?returnURL=https%3A%2F%2Febookcentral.proquest.com%2Flib%2Fsherubtsebt%2Fhome.action">ProQuest Ebook</a></li>
+                    <li><a href="#">Online Catalogue</a></li>
+                    <li><a href="https://ims.rub.edu.bt/public/auth/view-login">RUB IMS</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Office of the Vice Chancellor</a></li>
+                    <li><a href="#">G2C Services</a></li>
+                    <li><a href="https://sites.google.com/view/sherubtselibrary?pli=1">Library</a></li>
+                    <li><a href="https://www.moice.gov.bt/">MoICE</a></li>
+                    <li><a href="https://www.rcsc.gov.bt/en/">RCSC</a></li>
+                </ul>
+            </section>
+        </div>
+        <p class="footer-copy">&copy; 2024 Sherubtse College. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+    
+    

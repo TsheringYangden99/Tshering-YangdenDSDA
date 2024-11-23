@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherubtse College - About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+/* Mini Menu Styling */
+.mini-menu {
+            text-align: center;
+            background-color: #005b99;
+            color: white;
+            padding: 10px 0;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        .mini-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .mini-menu ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        .mini-menu ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .mini-menu ul li a:hover {
+            color: #ff6347;
+        }
+
+        /* Main Content */
+        main {
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        h2 {
+            color: #003366;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        h3 {
+            color: #005b99;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        /* Swiper Styling */
+        .swiper-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .swiper-slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .swiper-slide img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+        }
+
+        .swiper-navigation {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .nav-button {
+            background: rgba(255, 255, 255, 0.8);
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 20px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        footer .footer-section {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+
+        footer h4 {
+            color: #ff6347;
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        footer a:hover {
+            color: #ff6347;
+        }
+
+        footer .footer-logo-contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer .footer-logo-image {
+            width: 80px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        footer .footer-copy {
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        /* Container for the Alumni Album Section */
+.album {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.album h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Grid layout for Alumni Album */
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+/* General Album Section */
+.album {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.album h2 {
+    font-size: 2.5rem;
+    color: #003366;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Grid layout for Alumni Album */
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* Styling for each Alumni Card */
+.alumni-card {
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 280px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.alumni-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Styling */
+.alumni-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Name and Description Styling */
+.alumni-card p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #003366;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/* Alumni Quote Styling */
+.alumni-card span {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Author Information */
+.alumni-card .author {
+    font-size: 0.9rem;
+    color: #003366;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .album-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .album-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Sherubtse College Logo" class="logo-image">
+            <h1>Sherubtse College</h1>
+          </div>
+          <nav aria-label="Main Navigation">
+            <ul class="menu">
+              <li><a href="index.html" aria-label="Learn more about Sherubtse College">Home</a></li>
+              <li><a href="admission.html" aria-label="Find out about admissions">Academic</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" aria-label="Explore student services">Student services</a>
+                <div class="dropdown-content">
+                      <a href="https://sites.google.com/view/sherubtselibrary" class="unique-link blob1">Elibary</a>
+                      <a href="Ebook.html" class="unique-link blob2">Ebook and journal</a>
+                      <a href="Accomodation.html" class="unique-link blob3">Accomodation</a>
+                      <a href="Happinese and well being center.html" class="unique-link blob4">Happiness and wellbeing</a>
+                      <a href="club.html" class="unique-link blob5">club</a>
+                      <a href="events.html" class="unique-link blob6">Events</a>
+                      <a href="studentassocation.html" class="unique-link blob7">Student Association</a>
+                      <a href="games and sports.html" class="unique-link blob7">Games and Sports</a>
+                      <a href="Examrecords.html" class="unique-link blob7">Examination Records</a>
+                </div>
+              </li>
+              <li><a href="contact.html" aria-label="Contact Sherubtse College">Contact</a></li>
+            </ul>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+          </nav>
+          <script>
+            // JavaScript for dropdown and responsive menu
+            document.querySelector('.dropbtn').addEventListener('click', function () {
+              const dropdownContent = this.nextElementSibling;
+              dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+              this.setAttribute('aria-expanded', dropdownContent.style.display === 'block');
+            });
+          
+            document.getElementById('hamburger-menu').addEventListener('click', function () {
+              const menu = document.querySelector('.menu');
+              menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+          </script>
+        </div>
+</header>
+
+    <main>
+        <h2>About Us</h2>
+        <!-- Mini Menu inside the page with links to separate pages -->
+        <div class="mini-menu">
+            <ul>
+                <li><a href="about.html">Mission and Vision</a></li>
+                <li><a href="corevalues.html">Core-values</a></li>
+                <li><a href="Timeline.html">Timeline</a></li>
+                <li><a href="Faculity.html">Faculty Profile</a></li>
+            </ul>
+        </div>
+        <section class="core-values">
+            <h2 class="section-title">
+                <img src="logo.png" alt="Sherubtse College Logo" class="logo">
+                Sherubtse Alumni
+            </h2>
+            <p>Sherubtse Alumni Association welcomes all alumni: staff, faculty, students, and graduates of Sherubtse College to maintain a mutually beneficial and lifelong relationship among Sherubtse alumni and Sherubtse College through the Sherubtse Alumni Association. Your connection with Sherubtse College does not end when you graduate, stop working, or resign from the College. The Sherubtse Alumni Association ensures that you stay connected through alumni matters so that you can remain a part of the Sherubtse Family forever.
+
+                The College would like to register all of you with the Sherubtse Alumni Association and be part of the Sherubtse family, fostering a lifelong relationship and connection</p>
+                <section class="album">
+                    <h2>Alumni Album</h2>
+                    <div class="album-grid">
+                        <a href="Dasho Tshering Tobg" class="alumni-card">
+                            <img src="Dasho Tshering Tobgay.jpeg" alt="Alumni 1">
+                            <p>Dasho Tshering Tobgay</p>
+                            <span>Sherubtse College in Kanglung has the repute and the standing that it inspires every Bhutanese young man and woman get to "The Peak of learning"</span>
+                            <div class="author">Dasho Tshering Tobgay</div>
+                        </a>
+                        <a href="keazang.html" class="alumni-card">
+                            <img src="Keazang Dorji.jpeg" alt="Alumni 2">
+                            <p>Keazang Dorji</p>
+                            <span>Sherubtse to me is what Hogwarts is to Harry Potter. It is what shaped me into the person I am today. Many of the best things in my life happened or started there.</span>
+                            <div class="author">Bhutanese Rapper</div>
+                        </a>
+                        <a href="DashoN.html" class="alumni-card">
+                            <img src="Dasho Neten Zangmo.jpeg" alt="Alumni 3">
+                            <p>Dasho Neten Zangmo</p>
+                            <span>I spent ten and a half years of my prime life at Sherubtse, then a public school, studying from class three to twelve. Sherubtse was a second home for me, spending nine and a half months every year there.</span>
+                            <div class="author">Written by Alex Brown</div>
+                        </a>
+                        <a href="DashoTshering.html" class="alumni-card">
+                            <img src="Dasho-Tshering-Dorji.jpg" alt="Alumni 4">
+                            <p>Dasho Tshering Dorji</p>
+                            <span>Sherubtse reminds me of a time when I was at a crossroads in my youthful days. Largely lost and constantly seeking the large question of life: What has life in store for me? What is the relevance of the course I am studying?</span>
+                            <div class="author">Deputy Chairperson at National Council of Bhutan</div>
+                        </a>
+                    </div>
+                </section>
+                
+                        <!-- Add more alumni entries as needed -->
+                    </div>
+                </section>
+                <footer>
+                    <div class="footer-content">
+                        <section class="footer-logo-contact">
+                            <img src="logo.png" alt="Sherubtse College Logo" class="footer-logo-image">
+                            <div class="footer-contact-info">
+                                <h3>Sherubtse College</h3>
+                                <p>Kanglung, Trashigang</p>
+                                <p>Email: <a href="mailto:ict.sherubtse@rub.edu.bt">ict.sherubtse@rub.edu.bt</a></p>
+                                <p>Phone: +975-4-535128</p>
+                            </div>
+                        </section>
+                
+                        <section class="footer-section">
+                            <h4>Downloads</h4>
+                            <ul>
+                                <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/Student-Handbook_2024-2025-1.pdf">Student Handbook</a></li>
+                                <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Organogram-1.pdf">Organogram</a></li>
+                                <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/The-Wheel-of-Academic-Law.pdf">Wheel of Academic</a></li>
+                                <li><a href="#">College Prospectus</a></li>
+                                <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Zhib-Tshol.pdf">Zhib Tshol</a></li>
+                                <li><a href="#">Tower Newsletter</a></li>
+                                <li><a href="#">College Magazine</a></li>
+                                <li><a href="Forms.html">Forms</a></li>
+                                <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/RUB-Student-Code-of-Conduct-July-2022.pdf">Student Code of Conduct</a></li>
+                            </ul>
+                        </section>
+                
+                        <section class="footer-section">
+                            <h4>E-Services</h4>
+                            <ul>
+                                <li><a href="https://vle.sherubtse.edu.bt/">VLE</a></li>
+                                <li><a href="https://www.jstor.org/">JSTOR</a></li>
+                                <li><a href="https://ebookcentral.proquest.com/auth/lib/sherubtsebt/login.action?returnURL=https%3A%2F%2Febookcentral.proquest.com%2Flib%2Fsherubtsebt%2Fhome.action">ProQuest Ebook</a></li>
+                                <li><a href="#">Online Catalogue</a></li>
+                                <li><a href="https://ims.rub.edu.bt/public/auth/view-login">RUB IMS</a></li>
+                            </ul>
+                        </section>
+                
+                        <section class="footer-section">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="#">Office of the Vice Chancellor</a></li>
+                                <li><a href="#">G2C Services</a></li>
+                                <li><a href="https://sites.google.com/view/sherubtselibrary?pli=1">Library</a></li>
+                                <li><a href="https://www.moice.gov.bt/">MoICE</a></li>
+                                <li><a href="https://www.rcsc.gov.bt/en/">RCSC</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <p class="footer-copy">&copy; 2024 Sherubtse College. All rights reserved.</p>
+                </footer>
+                

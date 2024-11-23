@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherubtse College - About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* New Styles for Accommodation Section */
+        .accommodation {
+            padding: 30px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .accommodation h3 {
+            color: #005b99;
+            margin-bottom: 15px;
+        }
+
+        .residence-links {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .residence-links a {
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 2px solid #005b99;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .residence-links a:hover {
+            background-color: #005b99;
+            color: #fff;
+        }
+
+        .accommodation p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Image styling */
+        .accommodation img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Sherubtse College Logo" class="logo-image">
+            <h1>Sherubtse College</h1>
+          </div>
+          <nav aria-label="Main Navigation">
+            <ul class="menu">
+              <li><a href="about.html" aria-label="Learn more about Sherubtse College">About</a></li>
+              <li><a href="admission.html" aria-label="Find out about admissions">Academic</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" aria-label="Explore student services">Student services</a>
+                <div class="dropdown-content">
+                      <a href="https://sites.google.com/view/sherubtselibrary" class="unique-link blob1">Elibary</a>
+                      <a href="Ebook.html" class="unique-link blob2">Ebook and journal</a>
+                      <a href="Accomodation.html" class="unique-link blob3">Accomodation</a>
+                      <a href="Happinese and well being center.html" class="unique-link blob4">Happiness and wellbeing</a>
+                      <a href="club.html" class="unique-link blob5">club</a>
+                      <a href="events.html" class="unique-link blob6">Events</a>
+                      <a href="studentassocation.html" class="unique-link blob7">Student Association</a>
+                      <a href="games and sports.html" class="unique-link blob7">Games and Sports</a>
+                      <a href="Examrecords.html" class="unique-link blob7">Examination Records</a>
+                </div>
+              </li>
+              <li><a href="contact.html" aria-label="Contact Sherubtse College">Contact</a></li>
+            </ul>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+          </nav>
+          <script>
+            // JavaScript for dropdown and responsive menu
+            document.querySelector('.dropbtn').addEventListener('click', function () {
+              const dropdownContent = this.nextElementSibling;
+              dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+              this.setAttribute('aria-expanded', dropdownContent.style.display === 'block');
+            });
+          
+            document.getElementById('hamburger-menu').addEventListener('click', function () {
+              const menu = document.querySelector('.menu');
+              menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+          </script>
+    </header>
+    <main>
+        </section>
+
+        <section class="accommodation">
+            <h2>Accommodation</h2>
+            <h3>New Male and Female Residence Hall Allocation 2024</h3>
+            <p>Welcome to the 2024 academic year! We are excited to announce the residence hall allocations for new students, with dedicated halls for both male and female students, ensuring a comfortable and inclusive living environment for everyone.</p>
+
+            <div class="residence-links">
+                <a href="Male-Residence-Hall-Allocation (1).xlsx">Male Residence Hall Allocation</a>
+                <a href="Female-Residence-Hall-Allocation.xlsx">Female Residence Hall Allocation</a>
+            </div>
+
+            <h3>On-campus Accommodation</h3>
+            <p>Sherubtse has 20 on-campus residential accommodations (10 female residences and 10 male residences) with free unlimited Wi-Fi facilities. Students admitted on Government scholarship receive a monthly stipend of Nu. 2,500, of which Nu. 250 is deducted every month towards rent for accommodation.</p>
+
+            <h3>Centrally Catered Residence Halls</h3>
+            <p>There are three centrally catered residence halls for females and two for males. Meals are provided from the common mess. All Year 1 students are allocated centrally catered residence halls during their first year. Students on Government scholarships residing in centrally catered residence halls are not paid a stipend since Nu. 2250 is used for providing meals and other miscellaneous expenditures, with Nu. 250 deducted as rent. Self-financed students in these residence halls pay Nu. 2250 per month for mess expenses.</p>
+            
+            <h3>Self-catering Residence Halls</h3>
+            <p>All students after completing Year 1 are allocated self-catering residence halls. There are sixteen self-catering residence halls: 8 for male students and 8 for female students. Students manage their meals independently and receive a stipend of Nu. 2250 after deducting Nu. 250 as rent.</p>
+
+            <img src="residence-hall.jpg" alt="Residence Hall at Sherubtse College">
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <section class="footer-logo-contact">
+                <img src="logo.png" alt="Sherubtse College Logo" class="footer-logo-image">
+                <div class="footer-contact-info">
+                    <h3>Sherubtse College</h3>
+                    <p>Kanglung, Trashigang</p>
+                    <p>Email: <a href="mailto:ict.sherubtse@rub.edu.bt">ict.sherubtse@rub.edu.bt</a></p>
+                    <p>Phone: +975-4-535128</p>
+                </div>
+            </section>
+    
+            <section class="footer-section">
+                <h4>Downloads</h4>
+                <ul>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/Student-Handbook_2024-2025-1.pdf">Student Handbook</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Organogram-1.pdf">Organogram</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/The-Wheel-of-Academic-Law.pdf">Wheel of Academic</a></li>
+                    <li><a href="#">College Prospectus</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Zhib-Tshol.pdf">Zhib Tshol</a></li>
+                    <li><a href="#">Tower Newsletter</a></li>
+                    <li><a href="#">College Magazine</a></li>
+                    <li><a href="Forms.html">Forms</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/RUB-Student-Code-of-Conduct-July-2022.pdf">Student Code of Conduct</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer-section">
+                <h4>E-Services</h4>
+                <ul>
+                    <li><a href="https://vle.sherubtse.edu.bt/">VLE</a></li>
+                    <li><a href="https://www.jstor.org/">JSTOR</a></li>
+                    <li><a href="https://ebookcentral.proquest.com/auth/lib/sherubtsebt/login.action?returnURL=https%3A%2F%2Febookcentral.proquest.com%2Flib%2Fsherubtsebt%2Fhome.action">ProQuest Ebook</a></li>
+                    <li><a href="#">Online Catalogue</a></li>
+                    <li><a href="https://ims.rub.edu.bt/public/auth/view-login">RUB IMS</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Office of the Vice Chancellor</a></li>
+                    <li><a href="#">G2C Services</a></li>
+                    <li><a href="https://sites.google.com/view/sherubtselibrary?pli=1">Library</a></li>
+                    <li><a href="https://www.moice.gov.bt/">MoICE</a></li>
+                    <li><a href="https://www.rcsc.gov.bt/en/">RCSC</a></li>
+                </ul>
+            </section>
+        </div>
+        <p class="footer-copy">&copy; 2024 Sherubtse College. All rights reserved.</p>
+    </footer>
+    </body>
+    </html>
+    
+    

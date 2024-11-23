@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherubtse College - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    text-decoration: none;
+}
+.flip-card {
+    width: 500px;
+    height: 300px;
+    perspective: 1000px;
+    
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flip-card-front {
+    background-color: #f8f9fa;
+}
+
+.flip-card-back {
+    background-color: #007bff;
+    color: white;
+    transform: rotateY(180deg);
+}
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Sherubtse College Logo" class="logo-image">
+            <h1>Sherubtse College</h1>
+          </div>
+          <nav aria-label="Main Navigation">
+            <ul class="menu">
+              <li><a href="about.html" aria-label="Learn more about Sherubtse College">About</a></li>
+              <li><a href="admission.html" aria-label="Find out about admissions">Academic</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" aria-label="Explore student services">Student services</a>
+                <div class="dropdown-content">
+                      <a href="https://sites.google.com/view/sherubtselibrary" class="unique-link blob1">Elibary</a>
+                      <a href="Ebook.html" class="unique-link blob2">Ebook and journal</a>
+                      <a href="Accomodation.html" class="unique-link blob3">Accomodation</a>
+                      <a href="Happinese and well being center.html" class="unique-link blob4">Happiness and wellbeing</a>
+                      <a href="club.html" class="unique-link blob5">club</a>
+                      <a href="events.html" class="unique-link blob6">Events</a>
+                      <a href="studentassocation.html" class="unique-link blob7">Student Association</a>
+                      <a href="games and sports.html" class="unique-link blob7">Games and Sports</a>
+                      <a href="Examrecords.html" class="unique-link blob7">Examination Records</a>
+                </div>
+              </li>
+              <li><a href="contact.html" aria-label="Contact Sherubtse College">Contact</a></li>
+            </ul>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+        </nav>
+        <script>
+            // JavaScript for dropdown and responsive menu
+            document.querySelector('.dropbtn').addEventListener('click', function () {
+                const dropdownContent = this.nextElementSibling;
+                dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+                this.setAttribute('aria-expanded', dropdownContent.style.display === 'block');
+            });
+          
+            document.getElementById('hamburger-menu').addEventListener('click', function () {
+                const menu = document.querySelector('.menu');
+                menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+        </script>
+    </header>
+
+    <main>
+<!--Contact Section-->
+<div class="border-start border-5 border-primary d-inline-block ps-4">
+    <h2 class="title">
+        <img src="https://www.sherubtse.edu.bt/wp-content/uploads/elementor/thumbs/logo-removebg-preview-1-qg5devo52uwuyqukpeopqu2f6kqdtxid5uwrcbganc.png" alt="Sherubtse College Logo" class="logo">
+        Contact Us
+    </h2>
+</div>
+<div class="container">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <!-- Front Side -->
+            <div class="flip-card-front d-flex flex-column justify-content-center align-items-center">
+                <h3 class="sub-title">President</h3>
+            </div>
+            <!-- Back Side -->
+            <div class="flip-card-back d-flex flex-column justify-content-center align-items-center">
+                <h3>Mr. Tshering Wangdi</h3>  
+                <p>president.sherubtse@rub.edu.bt</p>  
+                <p>Phone: 975-04-535100</p>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <!-- Front Side -->
+            <div class="flip-card-front d-flex flex-column justify-content-center align-items-center">
+                <h3 class="sub-title">Academic Affairs</h3>
+                <p class="text-muted">Dean of Academic Affairs</p>
+            </div>
+            <!-- Back Side -->
+            <div class="flip-card-back d-flex flex-column justify-content-center align-items-center"> 
+                <h3>Mr. Sonam Dendup</h3>  
+                <p>daa.sherubtse@rub.edu.bt</p> 
+                <p>Phone: 975-04-535143</p>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <!-- Front Side -->
+            <div class="flip-card-front d-flex flex-column justify-content-center align-items-center">
+                <h3 class="sub-title">Student Affairs</h3>
+                <p class="text-muted">Dean of Student Affairs</p>
+            </div>
+            <!-- Back Side -->
+            <div class="flip-card-back d-flex flex-column justify-content-center align-items-center">
+                <h3>Mr. Thinley Namgyel</h3>   
+                <p>dsa.sherubtse@rub.edu.bt</p>  
+                <p>Phone : 975-04-535171</p>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <!-- Front Side -->
+            <div class="flip-card-front d-flex flex-column justify-content-center align-items-center">
+                <h3 class="sub-title">Research &amp; Industrial Linkages</h3>
+                <p class="text-muted">Dean of Research &amp; Industrial Linkages</p>
+            </div>
+            <!-- Back Side -->
+            <div class="flip-card-back d-flex flex-column justify-content-center align-items-center">
+                <h3>Dr. Yezer</h3>
+                <p>dril.sherubtse@rub.edu.bt</p>  
+                <p>Phone: 957-04-535171</p>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <!-- Front Side -->
+            <div class="flip-card-front d-flex flex-column justify-content-center align-items-center">
+                <h3 class="sub-title">Administration</h3>
+                <p class="text-muted">Assistant ADM Officer</p>
+            </div>
+            <!-- Back Side -->
+            <div class="flip-card-back d-flex flex-column justify-content-center align-items-center">
+                <h3>Mr. Yeshey Penjor</h3>
+                <p>yeshey.sherubtse@rub.edu.bt</p>   
+                <p>Phone: +975-04-535208</p>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <!-- Front Side -->
+            <div class="flip-card-front d-flex flex-column justify-content-center align-items-center">
+                <h3 class="sub-title">Webmaster</h3>
+            </div>
+            <!-- Back Side -->
+            <div class="flip-card-back d-flex flex-column justify-content-center align-items-center">
+                <h3>Ms. Tshering Yangden</h3>
+                <p>07230084.sherubtse@rub.edu.bt</p>
+                <p>Phone : +975-17837099</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--For contact-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!--Contact-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <footer>
+        <div class="footer-content">
+            <section class="footer-logo-contact">
+                <img src="logo.png" alt="Sherubtse College Logo" class="footer-logo-image">
+                <div class="footer-contact-info">
+                    <h3>Sherubtse College</h3>
+                    <p>Kanglung, Trashigang</p>
+                    <p>Email: <a href="mailto:ict.sherubtse@rub.edu.bt">ict.sherubtse@rub.edu.bt</a></p>
+                    <p>Phone: +975-4-535128</p>
+                </div>
+            </section>
+    
+            <section class="footer-section">
+                <h4>Downloads</h4>
+                <ul>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/Student-Handbook_2024-2025-1.pdf">Student Handbook</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Organogram-1.pdf">Organogram</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/The-Wheel-of-Academic-Law.pdf">Wheel of Academic</a></li>
+                    <li><a href="#">College Prospectus</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Zhib-Tshol.pdf">Zhib Tshol</a></li>
+                    <li><a href="#">Tower Newsletter</a></li>
+                    <li><a href="#">College Magazine</a></li>
+                    <li><a href="Forms.html">Forms</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/RUB-Student-Code-of-Conduct-July-2022.pdf">Student Code of Conduct</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer-section">
+                <h4>E-Services</h4>
+                <ul>
+                    <li><a href="https://vle.sherubtse.edu.bt/">VLE</a></li>
+                    <li><a href="https://www.jstor.org/">JSTOR</a></li>
+                    <li><a href="https://ebookcentral.proquest.com/auth/lib/sherubtsebt/login.action?returnURL=https%3A%2F%2Febookcentral.proquest.com%2Flib%2Fsherubtsebt%2Fhome.action">ProQuest Ebook</a></li>
+                    <li><a href="#">Online Catalogue</a></li>
+                    <li><a href="https://ims.rub.edu.bt/public/auth/view-login">RUB IMS</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Office of the Vice Chancellor</a></li>
+                    <li><a href="#">G2C Services</a></li>
+                    <li><a href="https://sites.google.com/view/sherubtselibrary?pli=1">Library</a></li>
+                    <li><a href="https://www.moice.gov.bt/">MoICE</a></li>
+                    <li><a href="https://www.rcsc.gov.bt/en/">RCSC</a></li>
+                </ul>
+            </section>
+        </div>
+        <p class="footer-copy">&copy; 2024 Sherubtse College. All rights reserved.</p>
+    </footer>
+    </body>
+    </html>
+    
+    

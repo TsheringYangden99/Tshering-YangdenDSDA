@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherubtse College - Bachelors of Data Science & Data Analytics</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Dropdown Section */
+        .dropdown-container {
+            margin: 20px 0;
+            border: 2px solid #005b99;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .dropdown-header {
+            padding: 15px;
+            background-color: #005b99;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dropdown-content {
+            padding: 15px;
+            background-color: #f0f0f0;
+            display: none;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        /* Toggle icon */
+        .dropdown-header .toggle-icon {
+            transition: transform 0.3s ease;
+        }
+
+        /* Rotate icon on open */
+        .dropdown-container.open .toggle-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Sherubtse College Logo" class="logo-image">
+            <h1>Sherubtse College</h1>
+          </div>
+          <nav aria-label="Main Navigation">
+            <ul class="menu">
+              <li><a href="about.html" aria-label="Learn more about Sherubtse College">About</a></li>
+              <li><a href="admission.html" aria-label="Find out about admissions">Academic</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" aria-label="Explore student services">Student services</a>
+                <div class="dropdown-content">
+                      <a href="https://sites.google.com/view/sherubtselibrary" class="unique-link blob1">Elibary</a>
+                      <a href="Ebook.html" class="unique-link blob2">Ebook and journal</a>
+                      <a href="Accomodation.html" class="unique-link blob3">Accomodation</a>
+                      <a href="Happinese and well being center.html" class="unique-link blob4">Happiness and wellbeing</a>
+                      <a href="club.html" class="unique-link blob5">club</a>
+                      <a href="events.html" class="unique-link blob6">Events</a>
+                      <a href="studentassocation.html" class="unique-link blob7">Student Association</a>
+                      <a href="games and sports.html" class="unique-link blob7">Games and Sports</a>
+                      <a href="Examrecords.html" class="unique-link blob7">Examination Records</a>
+                </div>
+              </li>
+              <li><a href="contact.html" aria-label="Contact Sherubtse College">Contact</a></li>
+            </ul>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+          </nav>
+          <script>
+            // JavaScript for dropdown and responsive menu
+            document.querySelector('.dropbtn').addEventListener('click', function () {
+              const dropdownContent = this.nextElementSibling;
+              dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+              this.setAttribute('aria-expanded', dropdownContent.style.display === 'block');
+            });
+          
+            document.getElementById('hamburger-menu').addEventListener('click', function () {
+              const menu = document.querySelector('.menu');
+              menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+          </script>
+          
+    </header>
+
+    <main>
+        <h2>Bachelors of Data Science & Data Analytics</h2>
+        <p>
+            As the global economy experiences unprecedented disruption as a result of emerging technological advancements, an increasing emphasis is being placed on the importance of graduates gaining both transferable skills and specific qualifications to ensure better long-term employment outcomes in an ever-changing future global workplace. The Bachelors of Data Science and Data Analytics programme is designed to produce students with adaptive mindsets to handle job disruptions and also to take on various opportunities that are presented along the way. For that, the programme will emphasize producing highly skilled and knowledgeable graduates. In line with these challenges and uncertainties in future employment, the existing learning strategies have been modified and realigned to suit the current needs of the nation. The programme aims to provide students with adequate exposure to data handling, visualization, and curation through a series of modules in Data Science, Statistics, and Mathematics. They will then learn to integrate and apply statistical and computational principles to solve real-world problems with large-scale data. The knowledge and skills gained from this programme can be applied to make sense of what appears to be random and chaotic to human eyes. Their expertise in turning data into actionable insights will prove highly beneficial in helping the leaders and managers arrive at better strategic decisions.
+        </p>
+        <p>Data experiences will play a central role in all modules, from the introductory module to the advanced capstone project or research project. The graduates, equipped with core skills, will be able to perform data wrangling, analyse the raw data gathered from various sources, and translate it into powerful, intelligent insights to make informed decisions. The graduates will also be able to obtain comprehensive analytical and technical skills covering handling, analysing, operationalizing data, and conducting data-driven quantitative and qualitative research.</p>
+
+        <!-- Dropdowns for Year Modules -->
+        <div class="dropdown-container">
+            <div class="dropdown-header">
+                Year I - Modules <span class="toggle-icon">&#9662;</span>
+            </div>
+            <div class="dropdown-content">
+                <ul>
+                    <li>Foundations of Statistical Computing</li>
+                    <li>Foundations of Project Management</li>
+                    <li>Introduction to Environmental & Global Economics</li>
+                    <li>Principles of Digital Communication</li>
+                    <li>Dzongkha Communication I</li>
+                    <li>Foundations of Data Science</li>
+                    <li>Foundations of Python Programming (Data Oriented)</li>
+                    <li>Academic Research Skills</li>
+                    <li>Dzongkha Communication II</li>
+                    <li>Elective I</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="dropdown-container">
+            <div class="dropdown-header">
+                Year II - Modules <span class="toggle-icon">&#9662;</span>
+            </div>
+            <div class="dropdown-content">
+                <ul>
+                    <li>Front End Web Development</li>
+                    <li>Modern Database Design</li>
+                    <li>Mathematics for Data Science I</li>
+                    <li>Data Analytics and Visualisation</li>
+                    <li> Elective II</li>
+                    <li>AI & Machine Learning</li>
+                    <li>Back End Web Development</li>
+                    <li>Mathematics for Data Science II</li>
+                    <li>Data Science Project I</li>
+                    <li>Elective III</li>
+                    <!-- Add more modules as needed -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="dropdown-container">
+            <div class="dropdown-header">
+                Year III - Modules <span class="toggle-icon">&#9662;</span>
+            </div>
+            <div class="dropdown-content">
+                <ul>
+                    <li>User Interaction Design</li>
+                    <li>Deep Learning</li>
+                    <li>Agile Process and Practice</li>
+                    <li>Mathematics for Data Science III</li>
+                    <li>Elective IV</li>
+                    <li> Advanced Deep Learning</li>
+                    <li> Big Data</li>
+                    <li> Data Science Project II</li>
+                    <li>Research with Advanced Data Analytics</li>
+                    <li> Elective V</li>
+                    <!-- Add more modules as needed -->
+                </ul>
+            </div>
+        </div>
+
+        <div class="dropdown-container">
+            <div class="dropdown-header">
+                Year IV - Modules <span class="toggle-icon">&#9662;</span>
+            </div>
+            <div class="dropdown-content">
+                <ul>
+                    <li>Natural Language Processing</li>
+                    <li>Ethics in AI and Data Governance</li>
+                    <li>Optimization for Data Science</li>
+                    <li>Advanced Skills for Career Development</li>
+                    <li>Professional Certification I</li>
+                    <li>Professional Certification II</li>
+                    <li>Deep Experiential: Industry Capstone Project</li>
+                    <!-- Add more modules as needed -->
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // JavaScript for dropdown functionality
+        const dropdowns = document.querySelectorAll('.dropdown-container');
+
+        dropdowns.forEach(dropdown => {
+            const header = dropdown.querySelector('.dropdown-header');
+            header.addEventListener('click', () => {
+                dropdown.classList.toggle('open');
+                const content = dropdown.querySelector('.dropdown-content');
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+    </script>
+    <footer>
+        <div class="footer-content">
+            <section class="footer-logo-contact">
+                <img src="logo.png" alt="Sherubtse College Logo" class="footer-logo-image">
+                <div class="footer-contact-info">
+                    <h3>Sherubtse College</h3>
+                    <p>Kanglung, Trashigang</p>
+                    <p>Email: <a href="mailto:ict.sherubtse@rub.edu.bt">ict.sherubtse@rub.edu.bt</a></p>
+                    <p>Phone: +975-4-535128</p>
+                </div>
+            </section>
+    
+            <section class="footer-section">
+                <h4>Downloads</h4>
+                <ul>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/Student-Handbook_2024-2025-1.pdf">Student Handbook</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Organogram-1.pdf">Organogram</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/The-Wheel-of-Academic-Law.pdf">Wheel of Academic</a></li>
+                    <li><a href="#">College Prospectus</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Zhib-Tshol.pdf">Zhib Tshol</a></li>
+                    <li><a href="#">Tower Newsletter</a></li>
+                    <li><a href="#">College Magazine</a></li>
+                    <li><a href="Forms.html">Forms</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/RUB-Student-Code-of-Conduct-July-2022.pdf">Student Code of Conduct</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer-section">
+                <h4>E-Services</h4>
+                <ul>
+                    <li><a href="https://vle.sherubtse.edu.bt/">VLE</a></li>
+                    <li><a href="https://www.jstor.org/">JSTOR</a></li>
+                    <li><a href="https://ebookcentral.proquest.com/auth/lib/sherubtsebt/login.action?returnURL=https%3A%2F%2Febookcentral.proquest.com%2Flib%2Fsherubtsebt%2Fhome.action">ProQuest Ebook</a></li>
+                    <li><a href="#">Online Catalogue</a></li>
+                    <li><a href="https://ims.rub.edu.bt/public/auth/view-login">RUB IMS</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Office of the Vice Chancellor</a></li>
+                    <li><a href="#">G2C Services</a></li>
+                    <li><a href="https://sites.google.com/view/sherubtselibrary?pli=1">Library</a></li>
+                    <li><a href="https://www.moice.gov.bt/">MoICE</a></li>
+                    <li><a href="https://www.rcsc.gov.bt/en/">RCSC</a></li>
+                </ul>
+            </section>
+        </div>
+        <p class="footer-copy">&copy; 2024 Sherubtse College. All rights reserved.</p>
+    </footer>    
+</body>
+</html>

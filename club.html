@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherubtse College - About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*style for HTML Happines and well being center*/
+        .club-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .club-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .club-card:hover {
+            transform: translateY(-5px);
+        }
+        .club-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .club-card h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .club-card a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+        }
+        .club-card a:hover {
+            color: #1abc9c;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Sherubtse College Logo" class="logo-image">
+            <h1>Sherubtse College</h1>
+          </div>
+          <nav aria-label="Main Navigation">
+            <ul class="menu">
+              <li><a href="about.html" aria-label="Learn more about Sherubtse College">About</a></li>
+              <li><a href="admission.html" aria-label="Find out about admissions">Academic</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" aria-label="Explore student services">Student services</a>
+                <div class="dropdown-content">
+                      <a href="https://sites.google.com/view/sherubtselibrary" class="unique-link blob1">Elibary</a>
+                      <a href="Ebook.html" class="unique-link blob2">Ebook and journal</a>
+                      <a href="Accomodation.html" class="unique-link blob3">Accomodation</a>
+                      <a href="Happinese and well being center.html" class="unique-link blob4">Happiness and wellbeing</a>
+                      <a href="club.html" class="unique-link blob5">club</a>
+                      <a href="events.html" class="unique-link blob6">Events</a>
+                      <a href="studentassocation.html" class="unique-link blob7">Student Association</a>
+                      <a href="games and sports.html" class="unique-link blob7">Games and Sports</a>
+                      <a href="Examrecords.html" class="unique-link blob7">Examination Records</a>
+                </div>
+              </li>
+              <li><a href="contact.html" aria-label="Contact Sherubtse College">Contact</a></li>
+            </ul>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+          </nav>
+          <script>
+            // JavaScript for dropdown and responsive menu
+            document.querySelector('.dropbtn').addEventListener('click', function () {
+              const dropdownContent = this.nextElementSibling;
+              dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+              this.setAttribute('aria-expanded', dropdownContent.style.display === 'block');
+            });
+          
+            document.getElementById('hamburger-menu').addEventListener('click', function () {
+              const menu = document.querySelector('.menu');
+              menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+          </script>
+    </header>
+    <body>
+        <main>
+            <div class="club-grid">
+                <!-- Replace the placeholder image src with actual club images -->
+                <div class="club-card">
+                    <img src="fina.png" alt="Forum of International and National Awareness">
+                    <h2>Forum of International and National Awareness (FINA)</h2>
+                    <a href="FINA.html">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="byg.jpg" alt="Bhutan Youth Foundation">
+                    <h2>Bhutan Youth Foundation</h2>
+                    <a href="BYF.html">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="cultural.jpg" alt="Cultural Club">
+                    <h2>Cultural Club</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="democracy.png" alt="Democracy Club">
+                    <h2>Democracy Club</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="cropped-logo-1-1.png" alt="Gyjur Duechen Tshokpa">
+                    <h2>Gyjur Duechen Tshokpa</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="gnh-1.png" alt="Sherubtse GNH Youth Club">
+                    <h2>Sherubtse GNH Youth Club</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="karate.png" alt="Karate Unit">
+                    <h2>Karate Unit</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="rovers.jpg" alt="Rovers Scout">
+                    <h2>Rovers Scout</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="salon.png" alt="Salon Unit">
+                    <h2>Salon Unit</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="art.jpg" alt="Sherubtse Art Club">
+                    <h2>Sherubtse Art Club</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="health.png" alt="Sherubtse Health Unit">
+                    <h2>Sherubtse Health Unit</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="Taekwondo.jpg" alt="Sherubtse Taekwondo Club">
+                    <h2>Sherubtse Taekwondo Unit</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="Singye-Karm-Unit.jpg" alt="Sherubtse Singye Karm Unit">
+                    <h2>Sherubtse Singye Karm Unit</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="sms.jpg" alt="Sherubtse Media Socity Club">
+                    <h2>Sherubtse Media Socity Club</h2>
+                    <a href="https://sms-5kjn.vercel.app/">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="organic.jpg" alt="Sherubtse Organic Farming Society">
+                    <h2>Sherubtse Organic Farming Society Club</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="ssu.png" alt="Sherubtse Social Service Unit">
+                    <h2>Social Service Unit</h2>
+                    <a href="https://shercolssu.vercel.app/">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="sto.jpg" alt="Sherubtse Toilet Organization">
+                    <h2>Sherubtse Toilet Organization Unit</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="tarayana.png" alt="Sherubtse tarayana unit">
+                    <h2>Sherubtse tarayana unit</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="un.jpg" alt="Sherubtse UN Unit">
+                    <h2>Sherubtse UN Unit</h2>
+                    <a href="https://sherubtse-un-gri3.vercel.app/">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="y-via.jpg" alt="Youth Volunteer in action">
+                    <h2>Youth Volunteer in actionUnit</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="ypeer.png" alt="Sherubtse Y-PEER Unit">
+                    <h2>Social Y-PEER Unit</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="doah (1).jpg" alt="Department of Arts and Humanities">
+                    <h2>Department of Arts and Humanities</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="science-e1702179612843.png" alt="Sherubtse Science Forum">
+                    <h2>Sherubtse Science Forum</h2>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="club-card">
+                    <img src="social-science.jpg" alt="Social Science Forum">
+                    <h2>Social Science Forum</h2>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <!-- Add the remaining clubs similarly -->
+            </div>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <section class="footer-logo-contact">
+                    <img src="logo.png" alt="Sherubtse College Logo" class="footer-logo-image">
+                    <div class="footer-contact-info">
+                        <h3>Sherubtse College</h3>
+                        <p>Kanglung, Trashigang</p>
+                        <p>Email: <a href="mailto:ict.sherubtse@rub.edu.bt">ict.sherubtse@rub.edu.bt</a></p>
+                        <p>Phone: +975-4-535128</p>
+                    </div>
+                </section>
+        
+                <section class="footer-section">
+                    <h4>Downloads</h4>
+                    <ul>
+                        <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/Student-Handbook_2024-2025-1.pdf">Student Handbook</a></li>
+                        <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Organogram-1.pdf">Organogram</a></li>
+                        <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/The-Wheel-of-Academic-Law.pdf">Wheel of Academic</a></li>
+                        <li><a href="#">College Prospectus</a></li>
+                        <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Zhib-Tshol.pdf">Zhib Tshol</a></li>
+                        <li><a href="#">Tower Newsletter</a></li>
+                        <li><a href="#">College Magazine</a></li>
+                        <li><a href="Forms.html">Forms</a></li>
+                        <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/RUB-Student-Code-of-Conduct-July-2022.pdf">Student Code of Conduct</a></li>
+                    </ul>
+                </section>
+        
+                <section class="footer-section">
+                    <h4>E-Services</h4>
+                    <ul>
+                        <li><a href="https://vle.sherubtse.edu.bt/">VLE</a></li>
+                        <li><a href="https://www.jstor.org/">JSTOR</a></li>
+                        <li><a href="https://ebookcentral.proquest.com/auth/lib/sherubtsebt/login.action?returnURL=https%3A%2F%2Febookcentral.proquest.com%2Flib%2Fsherubtsebt%2Fhome.action">ProQuest Ebook</a></li>
+                        <li><a href="#">Online Catalogue</a></li>
+                        <li><a href="https://ims.rub.edu.bt/public/auth/view-login">RUB IMS</a></li>
+                    </ul>
+                </section>
+        
+                <section class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Office of the Vice Chancellor</a></li>
+                        <li><a href="#">G2C Services</a></li>
+                        <li><a href="https://sites.google.com/view/sherubtselibrary?pli=1">Library</a></li>
+                        <li><a href="https://www.moice.gov.bt/">MoICE</a></li>
+                        <li><a href="https://www.rcsc.gov.bt/en/">RCSC</a></li>
+                    </ul>
+                </section>
+            </div>
+            <p class="footer-copy">&copy; 2024 Sherubtse College. All rights reserved.</p>
+        </footer>
+</body>
+</html>
+        
+        

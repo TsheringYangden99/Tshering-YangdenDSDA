@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherubtse College - Games & Sports</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Main Content */
+        main {
+            padding: 40px 20px;
+            background-color: #f7f7f7;
+            color: #444;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            color: #003366;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        h3 {
+            color: #005b99;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .section-content {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .facility-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .facility-item {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .facility-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .facility-item h4 {
+            color: #003366;
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .facility-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            max-width: 100%;
+            margin-bottom: 15px;
+        }
+
+        .facility-item p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #003366;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Sherubtse College Logo" class="logo-image">
+            <h1>Sherubtse College</h1>
+          </div>
+          <nav aria-label="Main Navigation">
+            <ul class="menu">
+              <li><a href="index.html" aria-label="Learn more about Sherubtse College">Home</a></li>
+              <li><a href="admission.html" aria-label="Find out about admissions">Academic</a></li>
+              <li class="dropdown">
+                <a href="javascript:void(0);" class="dropbtn" aria-label="Explore student services">Student services</a>
+                <div class="dropdown-content">
+                      <a href="https://sites.google.com/view/sherubtselibrary" class="unique-link blob1">Elibary</a>
+                      <a href="Ebook.html" class="unique-link blob2">Ebook and journal</a>
+                      <a href="Accomodation.html" class="unique-link blob3">Accomodation</a>
+                      <a href="Happinese and well being center.html" class="unique-link blob4">Happiness and wellbeing</a>
+                      <a href="club.html" class="unique-link blob5">club</a>
+                      <a href="events.html" class="unique-link blob6">Events</a>
+                      <a href="studentassocation.html" class="unique-link blob7">Student Association</a>
+                      <a href="games and sports.html" class="unique-link blob7">Games and Sports</a>
+                      <a href="Examrecords.html" class="unique-link blob7">Examination Records</a>
+                </div>
+              </li>
+              <li><a href="contact.html" aria-label="Contact Sherubtse College">Contact</a></li>
+            </ul>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger-menu" onclick="toggleMenu()">
+                &#9776;
+            </div>
+        </nav>
+        <script>
+            // JavaScript for dropdown and responsive menu
+            document.querySelector('.dropbtn').addEventListener('click', function () {
+                const dropdownContent = this.nextElementSibling;
+                dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+                this.setAttribute('aria-expanded', dropdownContent.style.display === 'block');
+            });
+
+            document.getElementById('hamburger-menu').addEventListener('click', function () {
+                const menu = document.querySelector('.menu');
+                menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+        </script>
+    </header>
+
+    <main>
+        <section>
+            <h2>Games & Sports at Sherubtse College</h2>
+            <p class="section-content">
+                At Sherubtse College, we believe that Games and Sports are an integral aspect of mental, emotional, and physical well-being. They teach important lessons about teamwork, tenacity, and resilience. The College encourages both students and staff to actively participate in various sports activities, fostering an environment of health, wellness, and camaraderie.
+            </p>
+            <p class="section-content">
+                The College hosts various intra-college tournaments, such as departmental competitions, class competitions, hostel competitions, and an annual marathon. Additionally, Sherubtse College takes part in regional, national, and international tournaments organized by the Bhutan University Sports Federation (BUSF).
+            </p>
+        </section>
+
+        <section>
+            <h3 class="section-title">Sports Facilities</h3>
+            <p class="section-content">
+                The College is equipped with top-notch sports facilities that cater to a wide range of games and sports. These facilities are available for both practice and competitions and are accessible to all members of the Sherubtse community.
+            </p>
+
+            <div class="facility-container">
+                <div class="facility-item">
+                    <h4>Football Ground</h4>
+                    <img src="football.jpg" alt="Sherubtse College Football Ground">
+                    <p class="section-content">
+                        The College has an international-sized football ground with astro turf. This facility is used not only for football matches but also for the celebration of major events, providing a versatile space for both sports and cultural activities.
+                    </p>
+                </div>
+
+                <div class="facility-item">
+                    <h4>Basketball Courts</h4>
+                    <img src="basket.png" alt="Sherubtse College Basketball Court">
+                    <p class="section-content">
+                        Sherubtse College boasts two basketball courts: one located near the clock tower and the other on campus II. These courts are available for practice and matches, except on Mondays (maintenance day).
+                    </p>
+                </div>
+
+                <div class="facility-item">
+                    <h4>Volleyball Court</h4>
+                    <p class="section-content">
+                        A volleyball court is located near the College football field, offering a space for practice and matches.
+                    </p>
+                </div>
+
+                <div class="facility-item">
+                    <h4>Tennis Court</h4>
+                    <p class="section-content">
+                        The College features a well-maintained tennis court available to students and staff.
+                    </p>
+                </div>
+
+                <div class="facility-item">
+                    <h4>Gymnasium (GYM)</h4>
+                    <p class="section-content">
+                        The College also has an indoor gymnasium located inside the multipurpose hall. It is equipped with basic facilities for bodybuilding and other exercises. A student trainer, supervised by the College Coach, manages the gym.
+                    </p>
+                </div>
+
+                <div class="facility-item">
+                    <h4>Archery Range</h4>
+                    <p class="section-content">
+                        An archery range is available for practice and tournaments, contributing to the development of students' focus and precision.
+                    </p>
+                </div>
+
+                <div class="facility-item">
+                    <h4>Multipurpose Hall</h4>
+                    <p class="section-content">
+                        The Multipurpose Hall houses three badminton courts and two table tennis tables. This indoor space provides ample opportunities for various indoor sports activities.
+                    </p>
+                </div>
+
+                <div class="facility-item">
+                    <h4>Futsal Ground</h4>
+                    <p class="section-content">
+                        A futsal ground is also available for students to engage in this fast-paced form of football.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <section class="footer-logo-contact">
+                <img src="logo.png" alt="Sherubtse College Logo" class="footer-logo-image">
+                <div class="footer-contact-info">
+                    <h3>Sherubtse College</h3>
+                    <p>Kanglung, Trashigang</p>
+                    <p>Email: <a href="mailto:ict.sherubtse@rub.edu.bt">ict.sherubtse@rub.edu.bt</a></p>
+                    <p>Phone: +975-4-535128</p>
+                </div>
+            </section>
+    
+            <section class="footer-section">
+                <h4>Downloads</h4>
+                <ul>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/Student-Handbook_2024-2025-1.pdf">Student Handbook</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Organogram-1.pdf">Organogram</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/The-Wheel-of-Academic-Law.pdf">Wheel of Academic</a></li>
+                    <li><a href="#">College Prospectus</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/01/Zhib-Tshol.pdf">Zhib Tshol</a></li>
+                    <li><a href="#">Tower Newsletter</a></li>
+                    <li><a href="#">College Magazine</a></li>
+                    <li><a href="Forms.html">Forms</a></li>
+                    <li><a href="https://www.sherubtse.edu.bt/wp-content/uploads/2024/07/RUB-Student-Code-of-Conduct-July-2022.pdf">Student Code of Conduct</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer-section">
+                <h4>E-Services</h4>
+                <ul>
+                    <li><a href="https://vle.sherubtse.edu.bt/">VLE</a></li>
+                    <li><a href="https://www.jstor.org/">JSTOR</a></li>
+                    <li><a href="https://ebookcentral.proquest.com/auth/lib/sherubtsebt/login.action?returnURL=https%3A%2F%2Febookcentral.proquest.com%2Flib%2Fsherubtsebt%2Fhome.action">ProQuest Ebook</a></li>
+                    <li><a href="#">Online Catalogue</a></li>
+                    <li><a href="https://ims.rub.edu.bt/public/auth/view-login">RUB IMS</a></li>
+                </ul>
+            </section>
+    
+            <section class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Office of the Vice Chancellor</a></li>
+                    <li><a href="#">G2C Services</a></li>
+                    <li><a href="https://sites.google.com/view/sherubtselibrary?pli=1">Library</a></li>
+                    <li><a href="https://www.moice.gov.bt/">MoICE</a></li>
+                    <li><a href="https://www.rcsc.gov.bt/en/">RCSC</a></li>
+                </ul>
+            </section>
+        </div>
+        <p class="footer-copy">&copy; 2024 Sherubtse College. All rights reserved.</p>
+    </footer>
+    </body>
+    </html>
+    
+    
